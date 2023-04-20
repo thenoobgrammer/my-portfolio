@@ -1,6 +1,11 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    fill: {
+      primary: '#569DAA',
+      secondary: '#87CBB9',
+      accent: '#9384D1'
+    },
     fontFamily: {
       primary: 'Orbitron',
       secondary: 'Rajdhani',
@@ -12,6 +17,7 @@ module.exports = {
       },
     },
     screens: {
+      xs: '430px',
       sm: '640px',
       md: '768px',
       lg: '960px',
@@ -19,8 +25,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#0a0a0a',
-        accent: '#B809C3',
+        primary: '#569DAA',
+        secondary: '#C9A7EB',
+        accent: '#577D86',
       },
       backgroundImage: {
         site: "url('./assets/site-bg.jpg')",
