@@ -9,16 +9,25 @@
 
 @layer base {
 	body {
-		@apply font-secondary text-lg leading-8 text-white;
+		@apply font-primary text-lg leading-8 text-white scrollable;
+	}
+	.scrollable {
+		@apply scrollbar-thin scrollbar-thumb-accent scrollbar-track-gray-100;
 	}
 	.svg-link {
 		@apply font-primary fill-secondary text-white font-bold;
+	}
+	.bold {
+		@apply font-bold
 	}
 	.h2 {
 		@apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
 	}
 	.h3 {
 		@apply text-primary font-primary font-semibold text-[26px] mb-6 leading-[46px];
+	}
+	.h4 {
+		@apply text-primary font-primary font-medium text-[20px] mb-6 leading-[20px];
 	}
 	.href {
 		@apply text-primary fill-primary hover:text-[#03C988] ease-linear transition-all duration-150;

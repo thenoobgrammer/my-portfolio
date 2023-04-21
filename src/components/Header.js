@@ -4,6 +4,7 @@ import Logo from '../assets/logo.svg'
 import { BiMenuAltRight } from 'react-icons/bi'
 import { Link } from 'react-scroll';
 import { Links } from '../common'
+import { CV } from './CV';
 
 const Header = () => {
   const [open, setOpen] = React.useState(false)
@@ -40,8 +41,8 @@ const Header = () => {
             md:relative md:top-0
             lg:items-center lg:flex lg:flex-3 lg:gap-5'
           >
-            <Modale title='My CV'>
-              My CV
+            <Modale title='My CV' buttonName='My CV' noSave={true}>
+              <CV />
             </Modale>
             <button className='lg:hidden md:hidden btn-not-background text-primary text-[40px]' onClick={() => setOpen(!open)}>
               <BiMenuAltRight />

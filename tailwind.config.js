@@ -7,8 +7,8 @@ module.exports = {
       accent: '#9384D1'
     },
     fontFamily: {
-      primary: 'Orbitron',
-      secondary: 'Rajdhani',
+      primary: ['nunito', 'sans-serif'],
+      secondary: '"Roboto Slab"',
       tertiary: 'Aldrich',
     },
     container: {
@@ -36,5 +36,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 };

@@ -1,35 +1,18 @@
 import React from 'react';
 import Image from '../assets/avatar.svg'
 import Modale from './DialogWithButton'
-import { FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
+import { socialLinks } from '../common'
 
 const Banner = () => {
-  const socialLinks = [
-    {
-      name: 'Github',
-      ref: '#',
-      icon: <FaGithub />
-    },
-    {
-      name: 'Instagram',
-      ref: '#',
-      icon: <FaInstagram />
-    },
-    {
-      name: 'Facebook',
-      ref: '#',
-      icon: <FaFacebook />
-    }
-  ]
 
   return (
     <section className='min-h-[95vh] lg:min-h-[90vh] flex items-center' id='home'>
       <div className='container mx-auto'>
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
-          <div className='flex-1 text-center font-secondary lg:text-left'>
+          <div className='flex-1 text-center lg:text-left'>
             <motion.h1
               variants={fadeIn('down', 0.3)}
               initial='hidden'
@@ -44,7 +27,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'
+              className='mb-6 text-[36px] lg:text-[60px] font-semibold uppercase leading-[1]'
             >
               <span className='text-primary mr-2'>
                 I am a
@@ -88,7 +71,7 @@ const Banner = () => {
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'
             >
               {socialLinks.map(({ name, ref, icon }, idx) => (
-                <a href={ref} className='text-primary href'>
+                <a href={ref} target="_blank" rel='noreferrer' className='text-primary href'>
                   {icon}
                 </a>
               ))}
