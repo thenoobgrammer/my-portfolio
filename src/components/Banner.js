@@ -29,7 +29,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='mb-6 text-[36px] lg:text-[60px] font-semibold uppercase leading-[1]'
             >
-              <span className='text-primary mr-2'>
+              <span className='text-secondary mr-2'>
                 I am a
               </span>
               <TypeAnimation
@@ -53,7 +53,7 @@ const Banner = () => {
               Culpa aliquip in labore esse ex labore excepteur sint est. Eu sunt esse amet cupidatat nulla ad mollit consequat. Incididunt aliquip in sit quis. Fugiat nisi irure occaecat est aliqua cupidatat culpa labore fugiat qui eu non sunt.
             </motion.p>
             <motion.div
-              variants={fadeIn('up', 0.3)}
+              variants={fadeIn('up', 0.3, 0.4)}
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
@@ -61,7 +61,9 @@ const Banner = () => {
             >
               <Modale
                 ctaSave='Send email'
-              >Contact me</Modale>
+                title='Contact form'
+                buttonName='Contact me'
+              ></Modale>
             </motion.div>
             <motion.div
               variants={fadeIn('up', 0.3)}
@@ -71,7 +73,7 @@ const Banner = () => {
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'
             >
               {socialLinks.map(({ name, ref, icon }, idx) => (
-                <a href={ref} target="_blank" rel='noreferrer' className='text-primary href'>
+                <a href={ref} target="_blank" rel='noreferrer' className='text-primary href' key={idx}>
                   {icon}
                 </a>
               ))}

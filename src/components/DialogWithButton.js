@@ -19,14 +19,14 @@ const DialogWithButton = ({
     const Modale = () => (
         <>
             <motion.div
-                variants={fadeIn('down', 0, 0.5)}
+                variants={fadeIn('down', 0, 0.1)}
                 initial='hidden'
                 whileInView={'show'}
-                className="fixed  justify-center items-center flex inset-0 mx-auto z-50 outline-none focus:outline-none"
+                className="fixed justify-center items-center flex inset-0 m-auto z-50 outline-none focus:outline-none max-w-[1000px] max-h-[1000px]"
             >
-                <div className="relative w-auto my-6 mx-auto ">
+                <div className="relative w-auto my-6 mx-auto">
                     {/*content*/}
-                    <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none max-h-[calc(100vh-6rem)]">
+                    <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none max-h-[900px]">
                         {/*header*/}
                         <div className="flex items-center justify-between p-5 border-b border-solid border-slate-200 rounded-t">
                             <span className='h3 mb-0'>
@@ -65,7 +65,8 @@ const DialogWithButton = ({
                     </div>
                 </div>
             </motion.div>
-            <div className="opacity-25 fixed inset-0 z-40 bg-black"></div></>
+            <div className="opacity-25 fixed inset-0 z-40 bg-black" onClick={() => setOpen(false)}></div>
+        </>
     )
 
     return (

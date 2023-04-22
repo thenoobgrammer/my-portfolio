@@ -50,7 +50,7 @@ const Services = () => {
               <div className='border-b-2 border-accent/40 h-[180px] mb-[38px] flex' key={idx}>
                 <div className='max-w-[467px] text-primary'>
                   <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>{name}</h4>
-                  <p className='font-secondary leading-tight'>{description}</p>
+                  <p className='leading-tight'>{description}</p>
                 </div>
               </div>
             ))}

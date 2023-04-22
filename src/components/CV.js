@@ -7,9 +7,9 @@ export const CV = () => {
         { icon: <FaMap />, text: 'Montreal, QC' },
         { icon: <FaPhone />, text: '+1 514-966-8481' },
         { icon: <FaEnvelope />, text: ['ant.hakim.stud@gmail.com'] },
-        { icon: <FaLinkedin />, text: LINKEDIN_URL, isUrl: true },
         { icon: <FaGlobe />, text: ['English, French'] },
-        { icon: <FaGithub />, text: GITHUB_PROFILE_URL, isUrl: true },
+        { icon: <FaLinkedin />, url: LINKEDIN_URL, text: 'My LinkedIn' },
+        { icon: <FaGithub />, url: GITHUB_PROFILE_URL, text: 'My Github' },
     ]
 
     const Languages = ['ReactJS', 'NodeJS', 'Javascript/HTML/CSS', 'StencilJS', 'SpringBoot', 'Python', 'C#', 'EmberJS', 'PolymerJS', 'Angular']
@@ -104,16 +104,16 @@ export const CV = () => {
     ]
 
     return (
-        <div className='flex text-primary max-w-6xl gap-11 scroll-smooth'>
+        <div className='flex text-primary max-w-fit gap-11 scroll-smooth'>
             <div className="flex flex-col gap-y-10">
-                <div className=''>
+                <div>
                     <span className='h3 m-0'>Personal information</span>
                     <div className='flex flex-col gap-y-1'>
-                        {PersonalInfo.map(({ icon, text, isUrl }, idx) => (
-                            <div className='flex items-center gap-4'>
+                        {PersonalInfo.map(({ icon, text, url }, idx) => (
+                            <div className='flex items-center gap-4' key={idx}>
                                 <span>{icon}</span>
-                                {isUrl ?
-                                    <a href={text}>
+                                {!!url ?
+                                    <a href={url} target='_blank' rel='noreferrer' className='href link'>
                                         {text}
                                     </a>
                                     :
@@ -128,7 +128,7 @@ export const CV = () => {
                     <span className='h3 m-0'>Skillset</span>
                     <div className='flex flex-col'>
                         {Languages.map((language, idx) => (
-                            <span>{language}</span>
+                            <span key={idx}>{language}</span>
                         ))}
                     </div>
                 </div>
@@ -136,7 +136,7 @@ export const CV = () => {
                     <span className='h3 m-0'>Education</span>
                     <div className='flex flex-col gap-y-4'>
                         {Education.map(({ start, end, institution, program }, idx) => (
-                            <div className='flex flex-col items-start'>
+                            <div className='flex flex-col items-start' key={idx}>
                                 <span>{start} - {end} - {institution}</span>
                                 <span>{program}</span>
                             </div>
@@ -151,15 +151,16 @@ export const CV = () => {
                     </div>
                     <div className='flex flex-col gap-y-10'>
                         {WorkExperiences.map(({ start, end, company, title, descriptions, technologies }, idx) => (
-                            <div className='flex flex-col'>
+                            <div className='flex flex-col' key={idx}>
                                 <div className='flex flex-col'>
                                     <span className='h3 m-0'>{start} - {end} / {company}</span>
                                     <span className='h4'><i>{title}</i></span>
                                 </div>
                                 <ul>
-                                    {descriptions.map((description) => (
-                                        <li>
-                                            {description}
+                                    {descriptions.map((description, innerIdx) => (
+                                        <li className='flex gap-x-4' key={innerIdx}>
+                                            <span>-</span>
+                                            <span>{description}</span>
                                         </li>
                                     ))}
                                     <li className='my-1'>
@@ -176,15 +177,16 @@ export const CV = () => {
                     </div>
                     <div className='flex flex-col gap-y-10'>
                         {PersonalProjects.map(({ name, title, descriptions, technologies }, idx) => (
-                            <div className='flex flex-col'>
+                            <div className='flex flex-col' key={idx}>
                                 <div className='flex flex-col'>
                                     <span className='h3 m-0'>{name}</span>
                                     <span className='h4'><i>{title}</i></span>
                                 </div>
                                 <ul>
-                                    {descriptions.map((description) => (
-                                        <li>
-                                            {description}
+                                    {descriptions.map((description, innerIdx) => (
+                                        <li className='flex gap-x-4' key={innerIdx}>
+                                            <span>-</span>
+                                            <span>{description}</span>
                                         </li>
                                     ))}
                                     <li className='my-1'>

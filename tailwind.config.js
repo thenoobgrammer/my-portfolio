@@ -3,11 +3,11 @@ module.exports = {
   theme: {
     fill: {
       primary: '#569DAA',
-      secondary: '#87CBB9',
+      secondary: '#03c988',
       accent: '#9384D1'
     },
     fontFamily: {
-      primary: ['nunito', 'sans-serif'],
+      primary: ['roboto', 'sans-serif'],
       secondary: '"Roboto Slab"',
       tertiary: 'Aldrich',
     },
@@ -26,7 +26,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#569DAA',
-        secondary: '#C9A7EB',
+        secondary: '#03c988',
         accent: '#577D86',
       },
       backgroundImage: {

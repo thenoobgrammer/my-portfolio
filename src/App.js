@@ -7,6 +7,7 @@ import Work from './components/Work';
 import Contact from './components/Contact';
 
 const App = () => {
+
   return (
     <div className='bg-white overflow-hidden'>
       <Header />

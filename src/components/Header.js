@@ -1,17 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Modale from '../components/DialogWithButton'
 import Logo from '../assets/logo.svg'
 import { BiMenuAltRight } from 'react-icons/bi'
 import { Link } from 'react-scroll';
 import { Links } from '../common'
 import { CV } from './CV';
+import { useScreenSize } from '../hooks'
 
 const Header = () => {
   const [open, setOpen] = React.useState(false)
+  const isMobile = useScreenSize()
+
+  React.useEffect(() => {
+    console.log(isMobile)
+    if (!isMobile) {
+      setOpen(false)
+    }
+  }, [isMobile])
+
+  const MobileHeader = () => {
+
+  }
 
   return (
     <>
-      <div className={`${open ? 'opacity-25 fixed inset-0 z-3 bg-black' : ''}`}></div>
+      <div className={`${open ? 'opacity-25 fixed inset-0 z-3 bg-black' : ''}`} onClick={() => setOpen(false)}></div>
       <div className='bg-white md:bg-none fixed w-full z-50'>
         <div className='md:flex md:justify-between md:items-center py-8 container mx-auto'>
           <a href='#'>
@@ -20,7 +33,7 @@ const Header = () => {
           <div className={`relative flex flex-col items-end my-7 ease-linear transition-height duration-300 ${open ? '-top-none xs:h-auto' : 'xs:h-0 -top-[500px]'} md:h-fit md:static md:flex md:flex-row md:gap-x-6 md:my-0 lg:flex lg:flex-2 lg:gap-10`}
           >
             {Links.map(({ path, offset = 0, description, icon }, idx) => (
-              <div className='border-b-2 border-accent/40 mb-4 flex md:border-none md:mb-0 md:flex-none'>
+              <div className='border-b-2 border-accent/40 mb-4 flex md:border-none md:mb-0 md:flex-none' key={idx}>
                 <Link
                   to={path}
                   offset={offset}
