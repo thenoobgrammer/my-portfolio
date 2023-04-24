@@ -1,20 +1,19 @@
 import React from 'react';
 import Image from '../assets/avatar.svg'
-import Modale from './DialogWithButton'
+import ContactMeForm from './ContactMeForm'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import { socialLinks } from '../common'
 
 const Banner = () => {
-
   return (
     <section className='min-h-[95vh] lg:min-h-[90vh] flex items-center' id='home'>
       <div className='container mx-auto'>
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
           <div className='flex-1 text-center lg:text-left'>
             <motion.h1
-              variants={fadeIn('down', 0.3)}
+              variants={fadeIn('down', 0.3, 0.1)}
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
@@ -23,13 +22,13 @@ const Banner = () => {
               ANTOINE <span>HAKIM</span>
             </motion.h1>
             <motion.div
-              variants={fadeIn('down', 0.4)}
+              variants={fadeIn('down', 0.4, 0.1)}
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='mb-6 text-[36px] lg:text-[60px] font-semibold uppercase leading-[1]'
             >
-              <span className='text-secondary mr-2'>
+              <span className='text-accent mr-2'>
                 I am a
               </span>
               <TypeAnimation
@@ -44,7 +43,7 @@ const Banner = () => {
               />
             </motion.div>
             <motion.p
-              variants={fadeIn('right', 0.5)}
+              variants={fadeIn('right', 0.5, 0.1)}
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
@@ -53,20 +52,16 @@ const Banner = () => {
               Culpa aliquip in labore esse ex labore excepteur sint est. Eu sunt esse amet cupidatat nulla ad mollit consequat. Incididunt aliquip in sit quis. Fugiat nisi irure occaecat est aliqua cupidatat culpa labore fugiat qui eu non sunt.
             </motion.p>
             <motion.div
-              variants={fadeIn('up', 0.3, 0.4)}
+              variants={fadeIn('up', 0.3, 0.1)}
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'
             >
-              <Modale
-                ctaSave='Send email'
-                title='Contact form'
-                buttonName='Contact me'
-              ></Modale>
+              <ContactMeForm />
             </motion.div>
             <motion.div
-              variants={fadeIn('up', 0.3)}
+              variants={fadeIn('up', 0.3, 0.1)}
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}

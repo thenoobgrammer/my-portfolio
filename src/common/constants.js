@@ -44,14 +44,14 @@ export const Links = [
         description: 'Services',
         icon: <BsClipboardData />
     },
-    {
-        path: 'work',
-        description: 'Work',
-        icon: <BsBriefcase />
-    },
-    {
-        path: 'contact',
-        description: 'Contact',
-        icon: <BsChatSquare />
-    },
+    // {
+    //     path: 'work',
+    //     description: 'Work',
+    //     icon: <BsBriefcase />
+    // },
+    // {
+    //     path: 'contact',
+    //     description: 'Contact',
+    //     icon: <BsChatSquare />
+    // },
 ]

@@ -7,16 +7,15 @@ import Work from './components/Work';
 import Contact from './components/Contact';
 
 const App = () => {
-
   return (
     <div className='bg-white overflow-hidden'>
       <Header />
       <Banner />
       <About />
       <Services />
-      <Work />
-      <Contact />
-      <div className='h-[4000px]'></div>
+      {/* <Work />
+      <Contact /> */}
+      {/* <div className='h-[1000px]'></div> */}
     </div>
   );
 };

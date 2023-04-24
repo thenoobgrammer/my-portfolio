@@ -1,31 +1,29 @@
-import React, { useEffect } from 'react';
-import Modale from '../components/DialogWithButton'
+import React from 'react';
+import { useTranslation } from 'react-i18next'
 import Logo from '../assets/logo.svg'
 import { BiMenuAltRight } from 'react-icons/bi'
 import { Link } from 'react-scroll';
 import { Links } from '../common'
 import { CV } from './CV';
 import { useScreenSize } from '../hooks'
+import LangSwitcher from './LangSwitcher'
 
 const Header = () => {
   const [open, setOpen] = React.useState(false)
+  const headerRef = React.useRef(null);
+  const { t } = useTranslation()
   const isMobile = useScreenSize()
 
-  React.useEffect(() => {
-    console.log(isMobile)
-    if (!isMobile) {
-      setOpen(false)
-    }
-  }, [isMobile])
-
-  const MobileHeader = () => {
-
-  }
+  // React.useEffect(() => {
+  //   if (!isMobile) {
+  //     setOpen(false)
+  //   }
+  // }, [isMobile])
 
   return (
     <>
       <div className={`${open ? 'opacity-25 fixed inset-0 z-3 bg-black' : ''}`} onClick={() => setOpen(false)}></div>
-      <div className='bg-white md:bg-none fixed w-full z-50'>
+      <div className='bg-white md:bg-none sticky w-full z-50'>
         <div className='md:flex md:justify-between md:items-center py-8 container mx-auto'>
           <a href='#'>
             <img src={Logo} alt='' />
@@ -41,10 +39,10 @@ const Header = () => {
                   smooth={true}
                   spy={true}
                   className='flex flex-col items-center justify-center cursor-pointer 
-                  text-primary w-[60px] h-[60px] href'
+                  text-primary href'
                 >
                   {icon}
-                  <span className='text-[22px] font-medium'>{description}</span>
+                  <span className='text-[22px] font-medium'>{t(description)}</span>
                 </Link>
               </div>
             ))}
@@ -54,9 +52,8 @@ const Header = () => {
             md:relative md:top-0
             lg:items-center lg:flex lg:flex-3 lg:gap-5'
           >
-            <Modale title='My CV' buttonName='My CV' noSave={true}>
-              <CV />
-            </Modale>
+            <LangSwitcher ref={headerRef} />
+            <CV />
             <button className='lg:hidden md:hidden btn-not-background text-primary text-[40px]' onClick={() => setOpen(!open)}>
               <BiMenuAltRight />
             </button>

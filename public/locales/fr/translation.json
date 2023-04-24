@@ -1,0 +1,70 @@
+{
+    "Montreal, QC": "Montréal, QC",
+    "English": "Anglais",
+    "French": "Français",
+    "My LinkedIn": "Mon LinkedIn",
+    "My Github": "Mon Github",
+    "Software Engineering": "Ingénieur Logiciel",
+    "Computer Science (Certificate)": "Science de l'informatique (Certificat)",
+    "Computer Science & technology": "Science de l'informatique et de la technologie",
+    "Vanier College": "Collège Vanier",
+    "Rest API application": "Application REST",
+    "Web development": "Développement Web",
+    "My CV": "Mon CV",
+    "Personal information": "Information personnelle",
+    "Skillset": "Compétences",
+    "Education": "Éducation",
+    "Work experience": "Expériences profesionnelles",
+    "Technologies": "Technologies",
+    "Personal highlights": "Projets personels",
+
+    "GoTo": {
+        "a": "Développer des modules existants dans une nouvelle platforme plus moderne, aidant à la transition d'au moins 65% des clients existants",
+        "b": "Travail en parallèle avec l'équipe UI/UX dans le but d'apporter la meilleure expérience utilisateur",
+        "c": "Développement de composants modulaire pour l'interne, utilisé parmis plusieurs autres équipes",
+        "d": "Développement en mode feature-first, aidant les clients ou bien les reviewers de voir le status d'une nouvelle feature"
+    },
+    
+    "Desjardins": {
+        "a": "Lead the development and introduced rigorous coding standards of our frontend application in Typescript using StencilJS",
+        "b": "Developed new features for Desjardins' applications using the latest trends in tech and architecture",
+        "c": "Successfully set up our continuous integration pipeline from scratch which improved our deployment performance significantly (~5x) using Concourse CI",
+        "d": "Successfully setup an API for our backend to accept calls from other internal applications using Spring Boot"
+    },
+
+    "Bell": {
+        "a": "Team lead for the entire lifecycle of the project. Created the UX design and the entire base architecture of the app's frontend",
+        "b": "Created automated testing (unit and integration testing) for every new feature added",
+        "c": "After project completion, switched to the backend team and helped develop and maintain new features in C#",
+        "d": "Debug, fixed a complex database system and helped update the backend automated migrations scripts"
+    },
+
+    "Designed and implemented an online store application from start to finish using React JS and Redux": "",
+    "Use of custom hooks through out the frontend to make use of better implementation design": "",
+    "Successfully developed a REST API backend in with NodeJS": "",
+    "Implemented an Auth0 support for authentication through the backend": "",
+    "Attached a functional mongodb database to my backend with an initializer script that populates collections upon first start": "",
+
+    "Full name": "Nom complet",
+    "Email": "Courriel",
+    "Inquiry": "Raison de contact",
+    "Contact form": "Formulaire de contact",
+    "Contact me": "Contactez moi",
+    "Send email": "Envoyer courriel",
+
+    "I am a": "Je suis u",
+    "Senior Fullstack developer": "Développeur fullstack sénior",
+    
+    "Home": "Acceuil",
+    "About": "À Propos",
+    "Services": "Services",
+
+    "About me": "À propos de moi",
+    "I'm a freelance front-end developer with over 4 years of experience": "Je suis un développeur indépendant avec plus de 4 ans d'expériences profesionnelles",
+    "Years of": "Années de",
+    "Experience": "Expérience",
+    "Projects": "Projets",
+    "Completed": "Completés",
+    "Clients": "Clients",
+    "Satisfied": "Satisfais"
+}
