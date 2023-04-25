@@ -1,6 +1,6 @@
 
 import { BiHomeAlt, BiUser } from 'react-icons/bi'
-import { BsClipboardData, BsBriefcase, BsChatSquare } from 'react-icons/bs'
+import { BsClipboardData } from 'react-icons/bs'
 import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa'
 
 /* Links */
@@ -8,7 +8,14 @@ export const GITHUB_PROFILE_URL = 'https://github.com/thenoobgrammer'
 export const FACEBOOK_URL = 'https://www.facebook.com/antonio.hakim.39/'
 export const LINKEDIN_URL = 'https://www.linkedin.com/in/antoine-hakim-359669105/'
 
-const CV_CONTENT = ''
+export const EMAIL_DESTINATION = 'thenoobgrammer@gmail.com'
+export const EMAIL_SUBJECT = 'CLIENT INQUIRY'
+export const EMAIL_PUBLIC_KEY = 'gdUsqVZJvLcgL1JXC'
+export const EMAIL_SERVICE_ID = 'service_gbfzv1f'
+export const EMAIL_TEMPLATE_ID = 'template_k1dy7ba'
+
+export const supportedLangs = ['en', 'fr']
+
 
 export const socialLinks = [
     {

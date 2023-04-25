@@ -1,26 +1,25 @@
 import React from 'react';
-import CountUp from 'react-countup'
-import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
-import { BsArrowUpRight } from 'react-icons/bs';
+import { useTranslation } from 'react-i18next';
 
 const Services = () => {
+  const { t } = useTranslation()
   const services = [
     {
-      name: 'Hosting/Infrastructure',
+      name: t('Hosting/Infrastructure'),
       description: 'Aliquip laboris deserunt officia consequat nulla nostrud magna duis pariatur. Voluptate sit minim excepteur ad. Id laboris officia dolor do fugiat aliquip deserunt non sint voluptate sit non cillum exercitation.',
-      link: 'Learn more'
+      link: t('Learn more')
     },
     {
-      name: 'Maintenance',
+      name: t('Maintenance'),
       description: 'Aliquip laboris deserunt officia consequat nulla nostrud magna duis pariatur. Voluptate sit minim excepteur ad. Id laboris officia dolor do fugiat aliquip deserunt non sint voluptate sit non cillum exercitation.',
-      link: 'Learn more'
+      link: t('Learn more')
     },
     {
-      name: 'REST Client',
+      name: t('REST Client'),
       description: 'Aliquip laboris deserunt officia consequat nulla nostrud magna duis pariatur. Voluptate sit minim excepteur ad. Id laboris officia dolor do fugiat aliquip deserunt non sint voluptate sit non cillum exercitation.',
-      link: 'Learn more'
+      link: t('Learn more')
     }
   ]
   return (
@@ -28,20 +27,20 @@ const Services = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row'>
           <motion.div
-            variants={fadeIn('right', 0.3)}
+            variants={fadeIn('right', 0.3, 0.1)}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.2 }}
             className='flex-1 lg:bg-services lg:bg-bottom lg:bg-no-repeat mb-12 lg:mb-0 text-accent'
           >
-            <h2 className='h2  mb-6'>What I Do</h2>
+            <h2 className='h2  mb-6'>{t('What I Do')}</h2>
             <h3 className='h3 max-w-[455px] mb-16'>
-              I am a Freelance frontend developer with over 4 years of professional experience
+              {t(`I am a Freelance frontend developer with over 4 years of professional experience`)}
             </h3>
-            <button className='btn btn-sm'>See my work</button>
+            {/* <button className='btn btn-sm'>See my work</button> */}
           </motion.div>
           <motion.div
-            variants={fadeIn('left', 0.2)}
+            variants={fadeIn('left', 0.2, 0.1)}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.2 }}

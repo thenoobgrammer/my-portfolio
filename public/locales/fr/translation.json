@@ -18,6 +18,8 @@
     "Technologies": "Technologies",
     "Personal highlights": "Projets personels",
 
+    "Banner.intro": "Si vous recherchez un développeur web compétent et passionné par la création de sites web beaux et fonctionnels, ne cherchez plus ! Avec 4 ans d'expérience dans le domaine, je suis déterminé à fournir un travail de qualité supérieure qui répond aux besoins de mes clients et dépasse leurs attentes. Que vous cherchiez un site web simple et élégant ou une plateforme complexe et riche en fonctionnalités, j'ai l'expertise et la créativité pour donner vie à votre vision. Travaillons ensemble pour construire quelque chose d'incroyable !",
+
     "GoTo": {
         "a": "Développer des modules existants dans une nouvelle platforme plus moderne, aidant à la transition d'au moins 65% des clients existants",
         "b": "Travail en parallèle avec l'équipe UI/UX dans le but d'apporter la meilleure expérience utilisateur",
@@ -52,7 +54,7 @@
     "Contact me": "Contactez moi",
     "Send email": "Envoyer courriel",
 
-    "I am a": "Je suis u",
+    "I am a": "Je suis un",
     "Senior Fullstack developer": "Développeur fullstack sénior",
     
     "Home": "Acceuil",

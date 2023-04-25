@@ -12,8 +12,8 @@ export const CV = () => {
     const PersonalInfo = [
         { icon: <FaMap />, text: t('Montreal, QC') },
         { icon: <FaPhone />, text: '+1 514-966-8481' },
-        { icon: <FaEnvelope />, text: ['ant.hakim.stud@gmail.com'] },
-        { icon: <FaGlobe />, text: [t('English'), t('French')] },
+        { icon: <FaEnvelope />, text: 'ant.hakim.stud@gmail.com' },
+        { icon: <FaGlobe />, text: `${t('English')}, ${t('French')}` },
         { icon: <FaLinkedin />, url: LINKEDIN_URL, text: t('My LinkedIn') },
         { icon: <FaGithub />, url: GITHUB_PROFILE_URL, text: t('My Github') },
     ]
@@ -31,13 +31,13 @@ export const CV = () => {
             start: 'Jan 2022',
             end: 'Present',
             company: 'GoTo (LogMeIn)',
-            title: 'Senior Frontend Engineer',
+            title: t('Senior Frontend Engineer'),
             descriptions: [
-                t(`Responsible for building a submodule on a newer platform which helped the transition of 65% of current clients (estimated) from the legacy application`),
-                t(`Working closely with UI/UX team to bring a better experience for customers`),
-                t(`Responsible for developing our own components when needed add them to the internal library`),
-                t(`Using feature branch deployment as part of our testing process`),
-                t(`Frequently demo'ing features that I developed in front of clients`)
+                t(`GoTo.a`),
+                t(`GoTo.b`),
+                t(`GoTo.c`),
+                t(`GoTo.d`),
+                t(`GoTo.e`)
             ],
             technologies: `ReactJS 17-18, Jest, Jenkins GitHub, Confluence, Bitbucket, Python, REST API, SonarQube`
         },
@@ -45,12 +45,12 @@ export const CV = () => {
             start: 'Dec 2020',
             end: 'Jan 2022',
             company: 'Desjardins',
-            title: 'Fullstack engineer',
+            title: t('Fullstack engineer'),
             descriptions: [
-                t(`Lead the development and introduced rigorous coding standards of our frontend application in Typescript using StencilJS`),
-                t(`Developed new features for Desjardins' applications using the latest trends in tech and architecture;`),
-                t(`Successfully set up our continuous integration pipeline from scratch which improved our deployment performance significantly (~5x) using Concourse CI`),
-                t(`Successfully setup an API for our backend to accept calls from other internal applications using Spring Boot`),
+                t(`Desjardins.a`),
+                t(`Desjardins.b`),
+                t(`Desjardins.c`),
+                t(`Desjardins.d`),
             ],
             technologies: `Spring Boot, StencilJs, Angular CLI, CloudFoundry, HTML/CSS, ConcourseCI, Jira, Confluence, Bitbucket, Kubernetes, REST API, Liferay`
         },
@@ -58,12 +58,12 @@ export const CV = () => {
             start: 'Jan 2019',
             end: 'May 2019',
             company: 'Bell Canada',
-            title: 'Fullstack engineer',
+            title: t('Fullstack engineer'),
             descriptions: [
-                t(`Team lead for the entire lifecycle of the project. Created the UX design and the entire base architecture of the app's frontend`),
-                t(`Created automated testing (unit and integration testing) for every new feature added`),
-                t(`After project completion, switched to the backend team and helped develop and maintain new features in C#`),
-                t(`Debug, fixed a complex database system and helped update the backend automated migrations scripts`),
+                t(`Bell.a`),
+                t(`Bell.b`),
+                t(`Bell.c`),
+                t(`Bell.d`),
             ],
             technologies: `C# (EF Core 2.1/3.1), EmberJS, MySQL, HTML/CSS, Bootstrap, Jira, Bamboo, Confluence, Bitbucket, Docker, Kubernetes, REST API`
         },
@@ -75,37 +75,39 @@ export const CV = () => {
             title: t('Rest API application'),
             links: [],
             descriptions: [
-                t(`Responsible for building a submodule on a newer platform which helped the transition of 65% of current clients (estimated) from the legacy application`),
-                t(`Working closely with UI/UX team to bring a better experience for customers`),
-                t(`Responsible for developing our own components when needed add them to the internal library`),
-                t(`Using feature branch deployment as part of our testing process`),
-                t(`Frequently demo'ing features that I developed in front of clients`)
+                t(`Sadbois.a`),
+                t(`Sadbois.b`),
+                t(`Sadbois.c`),
+                t(`Sadbois.d`),
+                t(`Sadbois.e`)
             ],
-            technologies: `ReactJS 17-18, Jest, Jenkins GitHub, Confluence, Bitbucket, Python, REST API, SonarQube`
+            technologies: `ReactJS 17-18, Jest, Jenkins GitHub, REST API`
         },
         {
             name: 'Pickside',
             title: t('Rest API application'),
             links: [],
             descriptions: [
-                t(`Designed and implemented an online store application from start to finish using React JS and Redux`),
-                t(`Use of custom hooks through out the frontend to make use of better implementation design`),
-                t(`Successfully developed a REST API backend in with NodeJS`),
-                t(`Implemented an Auth0 support for authentication through the backend`),
-                t(`Attached a functional mongodb database to my backend with an initializer script that populates collections upon first start`),
+                t(`Pickside.a`),
+                t(`Pickside.b`),
+                t(`Pickside.c`),
+                t(`Pickside.d`),
+                t(`Pickside.e`),
             ],
-            technologies: `NodeJS, ReactJS/Redux, Typescript, MUI v5, NoSQL, MongoDB, Github, Docker, HTML/CSS, AWS EC2`
+            technologies: `NodeJS, ReactJS/Redux, Typescript, MUI v5, MongoDB/NoSQL,, Github, Docker, HTML/CSS, AWS EC2`
         },
         {
             name: 'Portfolio',
             title: t('Web development'),
             links: [],
             descriptions: [
-                ``,
-                ``,
-                ``,
+                t(`Portfolio.a`),
+                t(`Portfolio.b`),
+                t(`Portfolio.c`),
+                t(`Portfolio.d`),
+                t(`Portfolio.e`),
             ],
-            technologies: `C# (EF Core 2.1/3.1), EmberJS, MySQL, HTML/CSS, Bootstrap, Jira, Bamboo, Confluence, Bitbucket, Docker, Kubernetes, REST API`
+            technologies: `ReactJS, Tailwind CSS, AWS S3, Cloudfront, Route 53, Certificate Manager`
         },
     ]
 

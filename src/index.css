@@ -7,6 +7,12 @@
 	transition: all 0.5s;
 }
 
+.disabled {
+	color: #939393;
+	background-color: #dddddd;
+	pointer-events: none;
+}
+
 @layer base {
 	body {
 		@apply font-primary text-lg leading-8 text-white scrollable;

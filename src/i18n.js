@@ -7,9 +7,11 @@ i18n
     .use(Backend)
     .use(LanguageDetector)
     .use(initReactI18next)
+    .use(new LanguageDetector(null, { lookupLocalStorage: "lng" }))
     .init({
         fallbackLng: 'en',
         debug: false,
+        supportedLngs: ['en', 'fr'],
         interpolation: {
             escapeValue: false,
         }
