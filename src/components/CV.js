@@ -2,8 +2,6 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { FaMap, FaPhone, FaEnvelope, FaLinkedin, FaGlobe, FaGithub } from 'react-icons/fa'
 import { GITHUB_PROFILE_URL, LINKEDIN_URL } from '../common'
-import CTAButtons from './CTAButtons'
-import Modale from './Modale'
 
 export const CV = () => {
     const { t } = useTranslation()
@@ -119,109 +117,100 @@ export const CV = () => {
     ]
 
     return (
-        <Modale
-            title={t('My CV')}
-            buttonName={t('My CV')}
-            open={open}
-            handleOpen={() => setOpen(true)}
-            handleClose={() => setOpen(false)}
-            footerContent={<CTAButtons onClose={() => setOpen(false)} noSave />}
-        >
-            <div className='flex text-primary w-full gap-11 scroll-smooth max-h-[70vh] overflow-y-scroll scrollbar'>
-                <div className="flex flex-col gap-y-10">
-                    <div>
-                        <span className='h4'>{t('Personal information')}</span>
-                        <div className='flex flex-col gap-y-1'>
-                            {PersonalInfo.map(({ icon, text, url }, idx) => (
-                                <div className='flex items-center gap-4' key={idx}>
-                                    <span>{icon}</span>
-                                    {!!url ?
-                                        <a href={url} target='_blank' rel='noreferrer' className='href link'>
-                                            {text}
-                                        </a>
-                                        :
-                                        <span>{text}</span>
-                                    }
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div>
-                        <span className='h4'>{t('Skillset')}</span>
-                        <div className='flex flex-col'>
-                            {Languages.map((language, idx) => (
-                                <span key={idx}>{language}</span>
-                            ))}
-                        </div>
-                    </div>
-                    <div>
-                        <span className='h4'>{t('Education')}</span>
-                        <div className='flex flex-col gap-y-4'>
-                            {Education.map(({ start, end, institution, program }, idx) => (
-                                <div className='flex flex-col items-start' key={idx}>
-                                    <span>{start} - {end} - {institution}</span>
-                                    <span>{program}</span>
-                                </div>
-                            ))}
-                        </div>
+        <div className='flex xs:flex-col md:flex-row  text-primary w-full gap-11 scroll-smooth max-h-[70vh] overflow-y-scroll scrollbar'>
+            <div className="flex flex-col gap-y-10">
+                <div>
+                    <span className='h4'>{t('Personal information')}</span>
+                    <div className='flex flex-col gap-y-1'>
+                        {PersonalInfo.map(({ icon, text, url }, idx) => (
+                            <div className='flex items-center gap-4' key={idx}>
+                                <span>{icon}</span>
+                                {!!url ?
+                                    <a href={url} target='_blank' rel='noreferrer' className='href link'>
+                                        {text}
+                                    </a>
+                                    :
+                                    <span>{text}</span>
+                                }
+                            </div>
+                        ))}
                     </div>
                 </div>
-                <div className="flex flex-col gap-y-7">
-                    <div className='flex flex-col gap-y-6'>
-                        <div>
-                            <span className='text-[36px]'>{t('Work experience')}</span>
-                        </div>
-                        <div className='flex flex-col gap-y-10'>
-                            {WorkExperiences.map(({ start, end, company, title, descriptions, technologies }, idx) => (
-                                <div className='flex flex-col' key={idx}>
-                                    <div className='flex flex-col'>
-                                        <span className='h3 m-0'>{start} - {end} / {company}</span>
-                                        <span className='subtitle mb-3'><i>{title}</i></span>
-                                    </div>
-                                    <ul>
-                                        {descriptions.map((description, innerIdx) => (
-                                            <li className='flex gap-x-4' key={innerIdx}>
-                                                <span>-</span>
-                                                <span>{description}</span>
-                                            </li>
-                                        ))}
-                                        <li className='my-1'>
-                                            <span className='font-semibold'>{t('Technologies')}: </span> {technologies}
-                                        </li>
-                                    </ul>
-                                </div>
-                            ))}
-                        </div>
+
+                <div>
+                    <span className='h4'>{t('Skillset')}</span>
+                    <div className='flex flex-col'>
+                        {Languages.map((language, idx) => (
+                            <span key={idx}>{language}</span>
+                        ))}
                     </div>
-                    <div className='flex flex-col gap-y-6'>
-                        <div>
-                            <span className='text-[36px]'>{t('Personal highlights')}</span>
-                        </div>
-                        <div className='flex flex-col gap-y-10'>
-                            {PersonalProjects.map(({ name, title, descriptions, technologies }, idx) => (
-                                <div className='flex flex-col' key={idx}>
-                                    <div className='flex flex-col'>
-                                        <span className='h3 m-0'>{name}</span>
-                                        <span className='subtitle mb-3'><i>{title}</i></span>
-                                    </div>
-                                    <ul>
-                                        {descriptions.map((description, innerIdx) => (
-                                            <li className='flex gap-x-4' key={innerIdx}>
-                                                <span>-</span>
-                                                <span>{description}</span>
-                                            </li>
-                                        ))}
-                                        <li className='my-1'>
-                                            <span className='font-semibold'>{t('Technologies')}: </span> {technologies}
-                                        </li>
-                                    </ul>
-                                </div>
-                            ))}
-                        </div>
+                </div>
+                <div>
+                    <span className='h4'>{t('Education')}</span>
+                    <div className='flex flex-col gap-y-4'>
+                        {Education.map(({ start, end, institution, program }, idx) => (
+                            <div className='flex flex-col items-start' key={idx}>
+                                <span>{start} - {end} - {institution}</span>
+                                <span>{program}</span>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
-        </Modale>
+            <div className="flex flex-col gap-y-7">
+                <div className='flex flex-col gap-y-6'>
+                    <div>
+                        <span className='text-[36px]'>{t('Work experience')}</span>
+                    </div>
+                    <div className='flex flex-col gap-y-10'>
+                        {WorkExperiences.map(({ start, end, company, title, descriptions, technologies }, idx) => (
+                            <div className='flex flex-col' key={idx}>
+                                <div className='flex flex-col'>
+                                    <span className='h3 m-0'>{start} - {end} / {company}</span>
+                                    <span className='subtitle mb-3'><i>{title}</i></span>
+                                </div>
+                                <ul>
+                                    {descriptions.map((description, innerIdx) => (
+                                        <li className='flex gap-x-4' key={innerIdx}>
+                                            <span>-</span>
+                                            <span>{description}</span>
+                                        </li>
+                                    ))}
+                                    <li className='my-1'>
+                                        <span className='font-semibold'>{t('Technologies')}: </span> {technologies}
+                                    </li>
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className='flex flex-col gap-y-6'>
+                    <div>
+                        <span className='text-[36px]'>{t('Personal highlights')}</span>
+                    </div>
+                    <div className='flex flex-col gap-y-10'>
+                        {PersonalProjects.map(({ name, title, descriptions, technologies }, idx) => (
+                            <div className='flex flex-col' key={idx}>
+                                <div className='flex flex-col'>
+                                    <span className='h3 m-0'>{name}</span>
+                                    <span className='subtitle mb-3'><i>{title}</i></span>
+                                </div>
+                                <ul>
+                                    {descriptions.map((description, innerIdx) => (
+                                        <li className='flex gap-x-4' key={innerIdx}>
+                                            <span>-</span>
+                                            <span>{description}</span>
+                                        </li>
+                                    ))}
+                                    <li className='my-1'>
+                                        <span className='font-semibold'>{t('Technologies')}: </span> {technologies}
+                                    </li>
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </div>
     )
 }

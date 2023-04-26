@@ -23,7 +23,7 @@ const Modale = ({
                     whileInView={'show'}
                     className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
                 >
-                    <div className="relative w-auto my-6 m-auto max-w-[70%]">
+                    <div className="relative w-auto my-6 m-auto xs:max-w-[100%] md:xs:max-w-[90%] lg:max-w-[170%]">
                         {/*content*/}
                         <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                             {/*header*/}
