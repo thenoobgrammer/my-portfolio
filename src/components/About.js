@@ -50,7 +50,7 @@ const About = () => {
           </div>
           <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
             <RenderStat topText={t('Years of')} bottomText={t('Experience')} start={0} end={4} fadeInMs={0.1} />
-            <RenderStat topText={t('Projects')} bottomText={t('Completed')} start={0} end={6} fadeInMs={0.2} />
+            {/* <RenderStat topText={t('Projects')} bottomText={t('Completed')} start={0} end={6} fadeInMs={0.2} /> */}
             {/* <RenderStat topText={t('Clients')} bottomText={t('Satisfied')} start={0} end={0} fadeInMs={0.3} /> */}
           </div>
         </div>
