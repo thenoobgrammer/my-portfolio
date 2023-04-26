@@ -18,7 +18,7 @@ export const CV = () => {
         { icon: <FaGithub />, url: GITHUB_PROFILE_URL, text: t('My Github') },
     ]
 
-    const Languages = ['ReactJS', 'NodeJS', 'Javascript/HTML/CSS', 'StencilJS', 'SpringBoot', 'Python', 'C#', 'EmberJS', 'PolymerJS', 'Angular']
+    const Languages = ['ReactJS', 'NodeJS', 'Javascript/HTML/CSS', 'AWS', 'StencilJS', 'SpringBoot', 'Python', 'C#', 'EmberJS', 'PolymerJS', 'Angular']
 
     const Education = [
         { start: '2016', end: '2020', institution: 'ETS', program: t('Software Engineering') },
@@ -37,7 +37,6 @@ export const CV = () => {
                 t(`GoTo.b`),
                 t(`GoTo.c`),
                 t(`GoTo.d`),
-                t(`GoTo.e`)
             ],
             technologies: `ReactJS 17-18, Jest, Jenkins GitHub, Confluence, Bitbucket, Python, REST API, SonarQube`
         },
@@ -71,17 +70,15 @@ export const CV = () => {
 
     const PersonalProjects = [
         {
-            name: 'Sadbois',
-            title: t('Rest API application'),
+            name: 'Portfolio',
+            title: t('Web development'),
             links: [],
             descriptions: [
-                t(`Sadbois.a`),
-                t(`Sadbois.b`),
-                t(`Sadbois.c`),
-                t(`Sadbois.d`),
-                t(`Sadbois.e`)
+                t(`Portfolio.a`),
+                t(`Portfolio.b`),
+                t(`Portfolio.c`),
             ],
-            technologies: `ReactJS 17-18, Jest, Jenkins GitHub, REST API`
+            technologies: `ReactJS, Tailwind CSS, AWS S3, Cloudfront, Route 53, Certificate Manager`
         },
         {
             name: 'Pickside',
@@ -97,18 +94,28 @@ export const CV = () => {
             technologies: `NodeJS, ReactJS/Redux, Typescript, MUI v5, MongoDB/NoSQL,, Github, Docker, HTML/CSS, AWS EC2`
         },
         {
-            name: 'Portfolio',
-            title: t('Web development'),
+            name: 'Discord',
+            title: t('Rest API application'),
             links: [],
             descriptions: [
-                t(`Portfolio.a`),
-                t(`Portfolio.b`),
-                t(`Portfolio.c`),
-                t(`Portfolio.d`),
-                t(`Portfolio.e`),
+                t(`Discord.a`),
+                t(`Discord.b`),
             ],
-            technologies: `ReactJS, Tailwind CSS, AWS S3, Cloudfront, Route 53, Certificate Manager`
+            technologies: `ReactJS 17-18, Jest, Jenkins GitHub, REST API`
         },
+        {
+            name: 'Sadbois',
+            title: t('Rest API application'),
+            links: [],
+            descriptions: [
+                t(`Sadbois.a`),
+                t(`Sadbois.b`),
+                t(`Sadbois.c`),
+            ],
+            technologies: `ReactJS 17-18, Jest, Jenkins GitHub, REST API`
+        },
+
+
     ]
 
     return (
@@ -189,7 +196,7 @@ export const CV = () => {
                     </div>
                     <div className='flex flex-col gap-y-6'>
                         <div>
-                            <span className='h2'>{t('Personal highlights')}</span>
+                            <span className='text-[36px]'>{t('Personal highlights')}</span>
                         </div>
                         <div className='flex flex-col gap-y-10'>
                             {PersonalProjects.map(({ name, title, descriptions, technologies }, idx) => (

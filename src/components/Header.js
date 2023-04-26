@@ -10,7 +10,6 @@ import LangSwitcher from './LangSwitcher'
 
 const Header = () => {
   const [open, setOpen] = React.useState(false)
-  const headerRef = React.useRef(null);
   const { t } = useTranslation()
   const isMobile = useScreenSize()
 
@@ -52,7 +51,7 @@ const Header = () => {
             md:relative md:top-0
             lg:items-center lg:flex lg:flex-3 lg:gap-5'
           >
-            <LangSwitcher ref={headerRef} />
+            <LangSwitcher />
             <CV />
             <button className='lg:hidden md:hidden btn-not-background text-primary text-[40px]' onClick={() => setOpen(!open)}>
               <BiMenuAltRight />

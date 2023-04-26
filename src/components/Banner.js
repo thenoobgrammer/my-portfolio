@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from '../assets/avatar.svg'
 import ContactMeForm from './ContactMeForm'
+import Modale from './Modale'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
@@ -9,6 +10,7 @@ import { useTranslation } from 'react-i18next';
 
 const Banner = () => {
   const { t } = useTranslation()
+  const [open, setOpen] = React.useState(false)
 
   const TypeAnimationTitle = () => React.useMemo(() => (
     <TypeAnimation
@@ -65,7 +67,16 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'
             >
-              <ContactMeForm />
+              <Modale
+                ctaSave='Send email'
+                title='Contact form'
+                buttonName={t('Contact me')}
+                open={open}
+                handleOpen={() => setOpen(true)}
+                handleClose={() => setOpen(false)}
+              >
+                <ContactMeForm onClose={() => setOpen(false)} />
+              </Modale>
             </motion.div>
             <motion.div
               variants={fadeIn('up', 0.3, 0.1)}

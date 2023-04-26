@@ -33,7 +33,7 @@ const LangSwitcher = () => {
                             <a
                                 key={idx}
                                 href="#pablo"
-                                className={`hreftext-sm py-2 px-4 font-normal font-semibold  block w-full  ${i18n.language === lang ? 'disabled' : ''}`}
+                                className={`hreftext-sm py-2 px-4 font-semibold  block w-full  ${i18n.language === lang ? 'disabled' : ''}`}
                                 onClick={e => handleClick(e, lang)}
                             >
                                 {capitalize(lang)}

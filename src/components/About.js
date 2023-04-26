@@ -42,16 +42,16 @@ const About = () => {
           <div className='flex-1'>
             <h2 className='h2 text-accent'>{t('About me')}</h2>
             <h3 className='h3 mb-4 text-primary'>
-              {t(`I'm a freelance front-end developer with over 4 years of experience`)}
+              {t(`I'm Fullstack developer with over 4 years of experience`)}
             </h3>
             <p className='mb-6 text-primary'>
-              {t(`Commodo elit est cupidatat aute. Nostrud ipsum sit laboris excepteur excepteur consectetur. Duis velit consectetur deserunt culpa do et do exercitation officia non aliquip. Aute cupidatat esse sunt esse ex. Veniam dolore eiusmod officia exercitation dolor sit eiusmod ea non eiusmod in. Fugiat duis ullamco magna cillum cillum quis dolore.`)}
+              {t(`About me content`)}
             </p>
           </div>
           <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
             <RenderStat topText={t('Years of')} bottomText={t('Experience')} start={0} end={4} fadeInMs={0.1} />
             <RenderStat topText={t('Projects')} bottomText={t('Completed')} start={0} end={6} fadeInMs={0.2} />
-            <RenderStat topText={t('Clients')} bottomText={t('Satisfied')} start={0} end={0} fadeInMs={0.3} />
+            {/* <RenderStat topText={t('Clients')} bottomText={t('Satisfied')} start={0} end={0} fadeInMs={0.3} /> */}
           </div>
         </div>
       </div>
