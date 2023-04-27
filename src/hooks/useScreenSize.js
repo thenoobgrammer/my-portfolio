@@ -7,9 +7,9 @@ const useScreenSize = () => {
     const getNumber = (value) => Number.parseInt(value.replace('px', ''))
 
     const isMobile = React.useMemo(() => {
-        const { sm } = config.theme.screens
+        const { md } = config.theme.screens
         const { width } = screenSize
-        return width <= getNumber(sm)
+        return width <= getNumber(md)
     }, [screenSize])
 
     React.useEffect(() => {

@@ -14,6 +14,8 @@ const Modale = ({
     footerContent,
 }) => {
 
+    //const isMobile = useScreenSize()
+
     const Dialog = () => {
         return (
             <>
@@ -21,31 +23,24 @@ const Modale = ({
                     variants={fadeIn('down', 0, 0.1)}
                     initial='hidden'
                     whileInView={'show'}
-                    className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+                    id="hs-scroll-inside-body-modal"
+                    className="w-full h-full fixed m-auto md:top-0 md:h-3/4 md:max-w-fit z-[60] inset-0 overflow-hidden"
                 >
-                    <div className="relative w-auto my-6 m-auto xs:max-w-[100%] md:xs:max-w-[90%] lg:max-w-[170%]">
-                        {/*content*/}
-                        <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                            {/*header*/}
-                            <div className="flex items-start justify-between px-6 py-4 border-b border-solid border-slate-200 rounded-t">
-                                <span className="h3 mb-0">
-                                    {title}
-                                </span>
-                                <button
-                                    className="p-1 ml-auto bg-transparent border-0 text-black opacity-30 float-right text-3xl leading-none font-semibold outline-none focus:outline-none hover:text-accent"
-                                    onClick={handleClose}
-                                >
-                                    <BsX />
-                                </button>
-                            </div>
-                            {/*body*/}
-                            <div className="relative p-6 flex-auto">
-                                {children}
-                            </div>
-                            {/*footer*/}
-                            <div className="flex items-center justify-end border-t border-solid border-slate-200 rounded-b">
-                                {footerContent}
-                            </div>
+                    <div className="max-h-full overflow-hidden flex flex-col bg-white border shadow-sm rounded-md">
+                        <div className="flex justify-between items-center py-3 px-4 border-b ">
+                            <span className="h3 mb-0">
+                                {title}
+                            </span>
+                            <button type="button" onClick={handleClose} className="hs-dropdown-toggle inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-500 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition-all text-sm dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800" data-hs-overlay="#hs-scroll-inside-body-modal">
+                                <span className="sr-only">Close</span>
+                                <BsX size={30} />
+                            </button>
+                        </div>
+                        <div className="p-4 overflow-y-auto scrollbar">
+                            {children}
+                        </div>
+                        <div className="flex justify-end items-center border-t">
+                            {footerContent}
                         </div>
                     </div>
                 </motion.div>

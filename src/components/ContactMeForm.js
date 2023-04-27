@@ -12,7 +12,7 @@ import { EMAIL_REGEX_PATTERN, EMAIL_PUBLIC_KEY, EMAIL_SERVICE_ID, EMAIL_TEMPLATE
 const ContactForm = ({ onClose, }) => {
     const { t } = useTranslation()
 
-    const { register, handleSubmit, formState: { errors }, trigger, reset } = useForm({
+    const { register, handleSubmit, formState: { errors }, reset } = useForm({
         mode: 'all',
         reValidateMode: 'onChange',
         resetOptions: {

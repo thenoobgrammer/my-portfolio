@@ -25,58 +25,8 @@ const Header = () => {
   }, [isMobile])
 
   return (
-    // <>
-    //   <div className={`${mobileMenuOpen ? 'opacity-25 fixed inset-0 z-3 bg-black' : ''}`} onClick={() => setMobileMenuOpen(false)}></div>
-    //   <div className='bg-white md:bg-none sticky w-full z-50'>
-    //     <div className='md:flex md:justify-between md:items-center py-8 container mx-auto'>
-    //       <a href='/'>
-    //         <img src={Logo} alt='' />
-    //       </a>
-    //       <div className={`relative flex flex-col items-end my-7 ease-linear transition-all duration-300 ${mobileMenuOpen ? 'xs:h-auto' : 'xs:h-0 -top-[500px]'} md:h-fit md:static md:flex md:flex-row md:gap-x-6 md:my-0 lg:flex lg:flex-2 lg:gap-10`}
-    //       >
-    // {Links.map(({ path, offset = 0, description, icon }, idx) => (
-    //   <div className='border-b-2 border-accent/40 mb-4 flex md:border-none md:mb-0 md:flex-none' key={idx}>
-    //     <Link
-    //       to={path}
-    //       offset={offset}
-    //       activeClass='active'
-    //       smooth={true}
-    //       spy={true}
-    //       onClick={() => mobileMenuOpen && setMobileMenuOpen(false)}
-    //       className='flex flex-col items-center justify-center cursor-pointer 
-    //       text-primary href'
-    //     >
-    //       {icon}
-    //       <span className='text-[22px] font-medium'>{t(description)}</span>
-    //     </Link>
-    //   </div>
-    // ))}
-    //       </div>
-    // <div className='
-    //   absolute flex top-8 right-8 gap-x-3 
-    //   md:relative md:top-0
-    //   lg:items-center lg:flex lg:flex-3 lg:gap-5'
-    // >
-    //   <LangSwitcher />
-    // <Modale
-    //   title={t('My CV')}
-    //   buttonName={t('My CV')}
-    //   open={openCV}
-    //   handleOpen={() => setOpenCV(true)}
-    //   handleClose={() => setOpenCV(false)}
-    //   footerContent={<CTAButtons onClose={() => setOpenCV(false)} noSave />}
-    // >
-    //   <CV />
-    // </Modale>
-    //   <button className='lg:hidden md:hidden btn-not-background text-primary text-[40px]' onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-    //     <BiMenuAltRight />
-    //   </button>
-    // </div>
-    //     </div>
-    //   </div>
-    // </>
     <>
-      <div className='flex justify-between items-center h-24 max-w-[80%] mx-auto px-4 text-primary'>
+      <div className={`flex justify-between items-center h-24 max-w-[80%] md:max-w-[90%] mx-auto px-4 text-primary `}>
         <a href='/'>
           <img src={Logo} alt='' />
         </a>
@@ -109,14 +59,14 @@ const Header = () => {
             <CV />
           </Modale>
         </div>
-        <div onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className='block cursor-pointer md:hidden'>
+        <div onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className='block cursor-pointer z-0 md:hidden'>
           {mobileMenuOpen ? <BiX size={24} /> : <BiMenu size={24} />}
         </div>
         <motion.div
           variants={fadeIn('top', 0, 0.1)}
           initial='hidden'
           whileInView={'show'}
-          className={mobileMenuOpen ? 'fixed flex flex-col gap-y-10 top-0 items-center left-0 w-full h-[40%] z-40 border-r-gray-900 bg-white' : 'fixed top-[-100%]'}
+          className={mobileMenuOpen ? 'fixed p-20 flex flex-col gap-y-5 top-24 items-center left-0 w-full h-auto z-30 border-r-gray-900 bg-white' : 'fixed top-[-100%]'}
         >
           <div>
             {Links.map(({ path, offset = 0, description, icon }, idx) => (
@@ -151,7 +101,7 @@ const Header = () => {
           </div>
         </motion.div>
       </div>
-      {mobileMenuOpen && <div className="opacity-25 fixed inset-0 z-30 bg-black" onClick={() => setMobileMenuOpen(false)}></div>}
+      {mobileMenuOpen && <div className="opacity-25 fixed top-24 inset-0 z-20 bg-black" onClick={() => setMobileMenuOpen(false)}></div>}
     </>
   )
 };

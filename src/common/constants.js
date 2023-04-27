@@ -14,7 +14,7 @@ export const EMAIL_PUBLIC_KEY = 'gdUsqVZJvLcgL1JXC'
 export const EMAIL_SERVICE_ID = 'service_gbfzv1f'
 export const EMAIL_TEMPLATE_ID = 'template_k1dy7ba'
 
-export const EMAIL_REGEX_PATTERN = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ 
+export const EMAIL_REGEX_PATTERN = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
 export const supportedLangs = ['en', 'fr']
 
@@ -41,17 +41,17 @@ export const Links = [
     {
         path: 'home',
         description: 'Home',
-        icon: <BiHomeAlt />
+        icon: <BiHomeAlt size={20} />
     },
     {
         path: 'about',
         description: 'About',
-        icon: <BiUser />
+        icon: <BiUser size={20} />
     },
     {
         path: 'services',
         description: 'Services',
-        icon: <BsClipboardData />
+        icon: <BsClipboardData size={20} />
     },
     // {
     //     path: 'work',
