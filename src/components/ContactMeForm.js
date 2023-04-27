@@ -6,9 +6,6 @@ import emailjs from '@emailjs/browser';
 import { isEmpty } from 'lodash'
 import { EMAIL_REGEX_PATTERN, EMAIL_PUBLIC_KEY, EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID } from '../common/constants';
 
-
-
-
 const ContactForm = ({ onClose, }) => {
     const { t } = useTranslation()
 
@@ -39,8 +36,8 @@ const ContactForm = ({ onClose, }) => {
             })
     }
     const Area = ({ name, label, register, required, ...props }) => (
-        <div className='flex flex-col'>
-            <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor={name}>{label}</label>
+        <div className='flex flex-col text-start text-[18px]'>
+            <label className='block text-gray-700 font-bold mb-2' htmlFor={name}>{label}</label>
             <textarea
                 className='shadow appearance-none border rounded-md w-full py-4 px-4 text-gray-700 leading-tight focus:outline-accent focus:shadow-outline'
                 rows='5'
@@ -55,8 +52,8 @@ const ContactForm = ({ onClose, }) => {
     )
 
     const Input = ({ name, label, register, required, pattern, ...props }) => (
-        <div className='flex flex-col'>
-            <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor={name}>{label}</label>
+        <div className='flex flex-col text-start text-[18px]'>
+            <label className=' block text-gray-700 font-bold mb-2' htmlFor={name}>{label}</label>
             <input
                 className='shadow appearance-none border rounded-md w-full py-4 px-4 text-gray-700 leading-tight focus:outline-accent focus:shadow-outline'
                 name={name}

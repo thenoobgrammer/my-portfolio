@@ -46,7 +46,7 @@ const Header = () => {
             </Link>
           ))}
         </div>
-        <div className='hidden md:flex md:gap-x-4'>
+        <div className='flex gap-x-4'>
           <LangSwitcher />
           <Modale
             title={t('My CV')}
@@ -84,21 +84,7 @@ const Header = () => {
               </Link>
             ))}
           </div>
-          <div>
-            <LangSwitcher />
-          </div>
-          <div>
-            <Modale
-              title={t('My CV')}
-              buttonName={t('My CV')}
-              open={openCV}
-              handleOpen={() => setOpenCV(true)}
-              handleClose={() => setOpenCV(false)}
-              footerContent={<CTAButtons onClose={() => setOpenCV(false)} noSave />}
-            >
-              <CV />
-            </Modale>
-          </div>
+
         </motion.div>
       </div>
       {mobileMenuOpen && <div className="opacity-25 fixed top-24 inset-0 z-20 bg-black" onClick={() => setMobileMenuOpen(false)}></div>}
