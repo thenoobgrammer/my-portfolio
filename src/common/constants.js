@@ -23,17 +23,17 @@ export const socialLinks = [
     {
         name: 'Github',
         ref: GITHUB_PROFILE_URL,
-        icon: <FaGithub />
+        icon: <FaGithub size={30} />
     },
     {
         name: 'Facebook',
         ref: FACEBOOK_URL,
-        icon: <FaFacebook />
+        icon: <FaFacebook size={30} />
     },
     {
         name: 'LinkedIn',
         ref: LINKEDIN_URL,
-        icon: <FaLinkedin />
+        icon: <FaLinkedin size={30} />
     },
 ]
 

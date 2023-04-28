@@ -35,13 +35,13 @@
 		@apply font-primary font-semibold text-[20px] leading-[30px];
 	}
 	.subtitle {
-		@apply text-primary font-primary font-normal text-[20px] leading-[20px] italic;
+		@apply font-primary font-normal text-[20px] leading-[20px] italic;
 	}
 	.link {
 		@apply font-semibold href;
 	}
 	.href {
-		@apply text-primary fill-primary hover:text-[#03C988] ease-linear transition-all duration-150;
+		@apply fill-primary hover:text-[#03C988] ease-linear transition-all duration-150;
 	}
 	.btn {
 		@apply rounded font-primary text-white font-bold bg-[#2C74B3] ease-linear transition-all duration-75 active:bg-secondary focus:bg-secondary hover:bg-secondary uppercase text-sm px-6 py-3 disabled:bg-slate-200 disabled:pointer-events-none;

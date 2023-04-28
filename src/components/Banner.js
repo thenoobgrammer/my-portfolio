@@ -1,6 +1,11 @@
 import React from 'react';
 import ContactMeForm from './ContactMeForm'
 import Modale from './Modale'
+import Profile1 from '../assets/profile_pic_1.png'
+import Profile2 from '../assets/profile_pic_2.png'
+import Profile3 from '../assets/profile_pic_3.png'
+import Profile4 from '../assets/profile_pic_4.png'
+import Profile5 from '../assets/profile_pic_5.png'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
@@ -53,9 +58,6 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='mb-6 text-[36px] lg:text-[60px] font-semibold leading-[1]'
             >
-              {/* <span className='text-accent mr-2'>
-                {t('I am a')}
-              </span> */}
               <TypeAnimationTitle />
             </motion.div>
             <motion.p
@@ -72,7 +74,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-12 mx-auto lg:mx-0'
+              className='mb-8 mx-auto lg:mx-0'
             >
               <Modale
                 ctaSave={t('Send email')}
@@ -84,13 +86,14 @@ const Banner = () => {
               >
                 <ContactMeForm onClose={() => setOpen(false)} />
               </Modale>
+
             </motion.div>
             <motion.div
               variants={fadeIn('up', 0.3, 0.1)}
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'
+              className='flex gap-x-6 max-w-max mx-auto lg:mx-0'
             >
               {socialLinks.map(({ name, ref, icon }, idx) => (
                 <a href={ref} target="_blank" rel='noreferrer' className='text-primary href' key={idx}>
@@ -99,8 +102,8 @@ const Banner = () => {
               ))}
             </motion.div>
           </div>
-          <div className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
-            {/* <img src={Image} alt='' /> */}
+          <div className='hidden -mt-[200px] lg:flex max-w-[450px] lg:max-w-[482px]'>
+            <img src={Profile1} alt='' />
           </div>
         </div>
       </div>
