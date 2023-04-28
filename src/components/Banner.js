@@ -10,10 +10,12 @@ import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import { socialLinks } from '../common'
+import { useScreenSize } from '../hooks'
 import { useTranslation } from 'react-i18next';
 
 const Banner = () => {
   const { t } = useTranslation()
+  const isMobile = useScreenSize()
   const [open, setOpen] = React.useState(false)
 
   const TypeAnimationTitle = () => React.useMemo(() => (
@@ -30,9 +32,17 @@ const Banner = () => {
   ), [])
 
   return (
-    <section className='section flex items-center' id='home'>
+    <section className='section flex flex-col lg:flex-row items-center' id='home'>
       <div className='container mx-auto'>
-        <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
+        <div className='flex flex-col h-full gap-y-8 lg:flex-row lg:items-center lg:gap-x-12  justify-between'>
+          <motion.div
+            variants={fadeIn('', 0.3, 0.1)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+            className='lg:hidden max-w-[450px] max-h-[482px] mx-auto'>
+            <img src={Profile1} alt='' />
+          </motion.div>
           <div className='flex-1 text-center lg:text-left'>
             <motion.h1
               variants={fadeIn('down', 0.3, 0.1)}
@@ -65,7 +75,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-8 w-full text-justify mx-auto lg:mx-0 text-primary'
+              className='mb-8 w-full text-center lg:text-justify mx-auto lg:mx-0 text-primary'
             >
               {t(`Banner.intro`)}
             </motion.p>
@@ -102,9 +112,14 @@ const Banner = () => {
               ))}
             </motion.div>
           </div>
-          <div className='hidden -mt-[200px] lg:flex max-w-[450px] lg:max-w-[482px]'>
+          <motion.div
+            variants={fadeIn('', 0.3, 0.1)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+            className='hidden -mt-[200px] lg:flex max-w-[450px] lg:max-w-[482px]'>
             <img src={Profile1} alt='' />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section >
