@@ -68,7 +68,7 @@
     "Attached a functional mongodb database to my backend with an initializer script that populates collections upon first start": "",
     "Full name": "Nom complet",
     "Email": "Courriel",
-    "Inquiry": "Raison de contact",
+    "Inquiry": "Description",
     "Contact form": "Formulaire de contact",
     "Contact me": "Contactez moi",
     "Send email": "Envoyer courriel",

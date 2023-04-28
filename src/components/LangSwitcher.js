@@ -2,7 +2,6 @@ import React from 'react'
 import { I18nContext } from 'react-i18next'
 import { useComponentVisibile } from '../hooks'
 import { supportedLangs } from '../common/constants'
-import { capitalize } from 'lodash'
 
 const LangSwitcher = () => {
     const { i18n } = React.useContext(I18nContext)
@@ -33,10 +32,10 @@ const LangSwitcher = () => {
                             <a
                                 key={idx}
                                 href="/"
-                                className={`hreftext-sm py-2 px-4 font-semibold  block w-full  ${i18n.language === lang ? 'disabled' : ''}`}
+                                className={`href text-sm py-2 px-4 font-semibold block w-full uppercase  ${i18n.language === lang ? 'disabled' : ''}`}
                                 onClick={e => handleClick(e, lang)}
                             >
-                                {capitalize(lang)}
+                                {lang}
                             </a>
                         ))}
                     </div>

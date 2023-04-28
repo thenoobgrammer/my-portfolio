@@ -8,8 +8,7 @@
 }
 
 .disabled {
-	color: #939393;
-	background-color: #dddddd;
+	color: #c3c3c3;
 	pointer-events: none;
 }
 
@@ -30,10 +29,10 @@
 		@apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
 	}
 	.h3 {
-		@apply text-primary font-primary font-semibold text-[26px] mb-6 leading-[46px];
+		@apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
 	}
 	.h4 {
-		@apply text-primary font-primary font-semibold text-[20px] leading-[30px];
+		@apply font-primary font-semibold text-[20px] leading-[30px];
 	}
 	.subtitle {
 		@apply text-primary font-primary font-normal text-[20px] leading-[20px] italic;
@@ -45,10 +44,10 @@
 		@apply text-primary fill-primary hover:text-[#03C988] ease-linear transition-all duration-150;
 	}
 	.btn {
-		@apply rounded font-primary text-white font-bold bg-[#2C74B3] active:bg-[#03C988] focus:bg-[#03C988] hover:bg-[#03C988] uppercase text-sm px-6 py-3;
+		@apply rounded font-primary text-white font-bold bg-[#2C74B3] active:bg-secondary focus:bg-secondary hover:bg-secondary uppercase text-sm px-6 py-3;
 	}
 	.btn-no-background {
-		@apply text-primary font-semibold active:text-[#03C988] focus:text-[#03C988] hover:text-[#03C988];
+		@apply text-primary font-semibold active:text-secondary focus:text-secondary hover:text-secondary;
 	}
 	.btn-sm {
 		@apply h-[48px] px-6 text-sm;

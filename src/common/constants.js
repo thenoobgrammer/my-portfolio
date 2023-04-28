@@ -41,6 +41,7 @@ export const Links = [
     {
         path: 'home',
         description: 'Home',
+        offset: -96,
         icon: <BiHomeAlt size={20} />
     },
     {
@@ -52,15 +53,5 @@ export const Links = [
         path: 'services',
         description: 'Services',
         icon: <BsClipboardData size={20} />
-    },
-    // {
-    //     path: 'work',
-    //     description: 'Work',
-    //     icon: <BsBriefcase />
-    // },
-    // {
-    //     path: 'contact',
-    //     description: 'Contact',
-    //     icon: <BsChatSquare />
-    // },
+    }
 ]

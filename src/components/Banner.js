@@ -18,7 +18,7 @@ const Banner = () => {
       wrapper='span'
       repeat={Infinity}
       sequence={[
-        t('Senior Fullstack developer'),
+        t('Senior Fullstack Developer'),
         2000
       ]}
       speed={50}
@@ -26,7 +26,7 @@ const Banner = () => {
   ), [])
 
   return (
-    <section className='min-h-[95vh] lg:min-h-[90vh] flex items-center' id='home'>
+    <section className='section flex items-center' id='home'>
       <div className='container mx-auto'>
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
           <div className='flex-1 text-center lg:text-left'>
@@ -39,16 +39,24 @@ const Banner = () => {
             >
               ANTOINE <span>HAKIM</span>
             </motion.h1>
+            <motion.h1
+              variants={fadeIn('right', 0.3, 0.1)}
+              initial='hidden'
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.7 }}
+              className=' text-primary border-b-2 my-3'
+            >
+            </motion.h1>
             <motion.div
               variants={fadeIn('down', 0.4, 0.1)}
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-6 text-[36px] lg:text-[60px] font-semibold uppercase leading-[1]'
+              className='mb-6 text-[36px] lg:text-[60px] font-semibold leading-[1]'
             >
-              <span className='text-accent mr-2'>
+              {/* <span className='text-accent mr-2'>
                 {t('I am a')}
-              </span>
+              </span> */}
               <TypeAnimationTitle />
             </motion.div>
             <motion.p
@@ -56,7 +64,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-8 max-w-lg mx-auto lg:mx-0 text-primary'
+              className='mb-8 w-full text-justify mx-auto lg:mx-0 text-primary'
             >
               {t(`Banner.intro`)}
             </motion.p>

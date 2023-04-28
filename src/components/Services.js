@@ -24,19 +24,28 @@ const Services = () => {
   ]
   return (
     <section className='section' id='services'>
-      <div className='container mx-auto'>
+      <div className='container mx-auto space-y-32'>
+        <motion.h2
+          variants={fadeIn('', 0.3, 0.6)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.2 }}
+          className='text-[40px] uppercase text-primary mb-6 text-center font-semibold'
+        >
+          {t('Services')}
+        </motion.h2>
         <div className='flex flex-col lg:flex-row'>
           <motion.div
             variants={fadeIn('right', 0.3, 0.1)}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.2 }}
-            className='flex-1 lg:bg-services lg:bg-bottom lg:bg-no-repeat mb-12 lg:mb-0 text-accent'
+            className='flex-1 lg:bg-services lg:bg-cover lg:bg-bottom lg:bg-no-repeat mb-12 lg:mb-0 text-accent'
           >
-            <h2 className='h2  mb-6'>{t('What I Do')}</h2>
-            <h3 className='h3 max-w-[455px] mb-16'>
-              {t(`I am a Freelance frontend developer with over 4 years of professional experience`)}
-            </h3>
+
+            {/* <h3 className='h3 max-w-[455px] mb-16'>
+              {t(`I am a Freelance Front-end developer with over 4 years of professional experience`)}
+            </h3> */}
             {/* <button className='btn btn-sm'>See my work</button> */}
           </motion.div>
           <motion.div

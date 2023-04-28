@@ -1,11 +1,12 @@
 import React from 'react';
+import BackButton from './BackButton'
 import { useTranslation } from 'react-i18next'
 import Logo from '../assets/logo.svg'
 import { BiMenu, BiX } from 'react-icons/bi'
 import { Link } from 'react-scroll';
 import { Links } from '../common'
 import { CV } from './CV';
-import { useScreenSize } from '../hooks'
+import { useOnScreen, useScreenSize } from '../hooks'
 import LangSwitcher from './LangSwitcher'
 import CTAButtons from './CTAButtons'
 import Modale from './Modale'
@@ -14,9 +15,11 @@ import { fadeIn } from '../variants'
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
+  const ref = React.useRef()
   const [openCV, setOpenCV] = React.useState(false)
   const { t } = useTranslation()
   const isMobile = useScreenSize()
+  const onScreen = useOnScreen(ref)
 
   React.useEffect(() => {
     if (!isMobile) {
@@ -26,7 +29,7 @@ const Header = () => {
 
   return (
     <>
-      <div className={`flex justify-between items-center h-24 max-w-[80%] md:max-w-[90%] mx-auto px-4 text-primary `}>
+      <div className={`flex justify-between items-center h-24 max-w-[80%] md:max-w-[90%] mx-auto px-4 text-primary`} ref={ref}>
         <a href='/'>
           <img src={Logo} alt='' />
         </a>
@@ -87,6 +90,14 @@ const Header = () => {
 
         </motion.div>
       </div>
+      {!onScreen &&
+        <motion.div
+          variants={fadeIn('top', 0.2, 0.6)}
+          whileInView={'show'}
+        >
+          <BackButton />
+        </motion.div>
+      }
       {mobileMenuOpen && <div className="opacity-25 fixed top-24 inset-0 z-20 bg-black" onClick={() => setMobileMenuOpen(false)}></div>}
     </>
   )

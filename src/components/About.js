@@ -3,7 +3,10 @@ import CountUp from 'react-countup'
 import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
+import Bell from '../assets/Bell-white.png'
+import Desjardins from '../assets/Desjardins-white.png'
+import GoTo from '../assets/Goto-white.png'
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -13,49 +16,68 @@ const About = () => {
 
   const RenderStat = ({ topText, bottomText, start, end, fadeInMs }) => (
     <motion.div
-      variants={fadeIn('up', fadeInMs)}
+      variants={fadeIn('up', fadeInMs, 0.4)}
       initial='hidden'
       whileInView={'show'}
       viewport={{ once: false, amount: 0.2 }}
+      className="w-fit flex gap-x-4 text-[#efefef]"
     >
-      <div className='text-[40px] font-tertiary text-primary mb-2'>
+      <div className='text-[60px] font-primary font-semibold leading-10'>
         {
           inView ?
-            <CountUp start={start} end={end} duration={2} />
+            <CountUp start={start} end={end} duration={2} className='font-medium' />
             :
             null
         }
       </div>
-      <div className='font-primary text-sm tracking-[2px] text-primary'>
-        {topText}
-        <br />
-        {bottomText}
+      <div className='font-primary text-sm tracking-[2px] flex flex-col text-start align-start'>
+        <span className='text-[20px]'>
+          {topText}
+        </span>
+        <span className='text-[20px]'>
+          {bottomText}
+        </span>
       </div>
     </motion.div>
   )
 
+  const RenderIcon = ({ icon, fadeInMs }) => (
+    <motion.div
+      variants={fadeIn('up', fadeInMs, 0.4)}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{ once: false, amount: 0.2 }}
+    >
+      <span className=''><img src={icon} alt='' /></span>
+    </motion.div>
+  )
+
   return (
-    <section className='section' id='about' ref={ref}>
-      <div className='container mx-auto'>
-        <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
-          <div className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-normal bg-top'></div>
-          <div className='flex-1'>
-            <h2 className='h2 text-accent'>{t('About me')}</h2>
-            <h3 className='h3 mb-4 text-primary'>
-              {t(`I'm Fullstack developer with over 4 years of experience`)}
-            </h3>
-            <p className='mb-6 text-primary'>
-              {t(`About me content`)}
-            </p>
-          </div>
-          <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
-            <RenderStat topText={t('Years of')} bottomText={t('Experience')} start={0} end={4} fadeInMs={0.1} />
-            {/* <RenderStat topText={t('Projects')} bottomText={t('Completed')} start={0} end={6} fadeInMs={0.2} /> */}
-            {/* <RenderStat topText={t('Clients')} bottomText={t('Satisfied')} start={0} end={0} fadeInMs={0.3} /> */}
+    <>
+      <section className='bg-primary section' id='about' ref={ref}>
+
+        {/* <div className='absolute section bg-primary z-20 inset-0 opacity-40'></div> */}
+        <div className='container mx-auto z-10 text-[#efefef] text-center max-w-3xl'>
+          <div className='flex flex-col align-middle items-center  m-auto gap-x-20 gap-y-0'>
+            <div className='border-b mb-6'>
+              <h2 className='h2 font-semibold'>{t('Little more about me')}</h2>
+              <p className='mb-6'>
+                {t(`About me content`)}
+              </p>
+            </div>
+            <div className='flex items-center align-middle'>
+              <RenderStat topText={t('Years')} bottomText={t('Experience')} start={0} end={4} fadeInMs={0.1} />
+              <div className='border-r h-[60px] ml-6 opacity-30'></div>
+              <div className='flex'>
+                <RenderIcon icon={Bell} fadeInMs={0.1} />
+                <RenderIcon icon={Desjardins} fadeInMs={0.3} />
+                <RenderIcon icon={GoTo} fadeInMs={0.4} />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   )
 };
 
