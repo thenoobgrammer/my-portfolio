@@ -18,7 +18,7 @@ const Banner = () => {
       wrapper='span'
       repeat={Infinity}
       sequence={[
-        t('Senior Fullstack Developer'),
+        t('Senior Fullstack Developer') + '...',
         2000
       ]}
       speed={50}

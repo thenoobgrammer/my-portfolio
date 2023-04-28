@@ -78,7 +78,7 @@ const ContactForm = ({ onClose, }) => {
         <form className='max-w-lg flex flex-col gap-y-6' ref={formRef} >
             <Input type='text' id='fullName' name='fullName' label={t('Full name')} register={register} errors={errors} placeholder={t('Full name')} />
             <Input type='email' id='email' name='email' label={t('Email')} register={register} errors={errors} pattern={EMAIL_REGEX_PATTERN} placeholder={t('Email')} />
-            <Area id='inquiry' name='inquiry' label={t('Inquiry')} register={register} errors={errors} placeholder={t('Describe your issue')} />
+            <Area id='inquiry' name='inquiry' label={t('Inquiry')} register={register} errors={errors} placeholder={t('Describe your project')} />
             <CTAButtons
                 disabled={!isEmpty(errors) || loading}
                 saveLabel={t('Send email')}

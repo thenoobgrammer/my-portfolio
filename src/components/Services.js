@@ -7,19 +7,20 @@ const Services = () => {
   const { t } = useTranslation()
   const services = [
     {
+      name: t('Project portfolio'),
+      description: t('Project portfolio description'),
+    },
+    {
+      name: t('Full-fledged application'),
+      description: t('Full-fledged application description')
+    },
+    {
       name: t('Hosting/Infrastructure'),
-      description: 'Aliquip laboris deserunt officia consequat nulla nostrud magna duis pariatur. Voluptate sit minim excepteur ad. Id laboris officia dolor do fugiat aliquip deserunt non sint voluptate sit non cillum exercitation.',
-      link: t('Learn more')
+      description: t('Hosting/Infrastructure description')
     },
     {
       name: t('Maintenance'),
-      description: 'Aliquip laboris deserunt officia consequat nulla nostrud magna duis pariatur. Voluptate sit minim excepteur ad. Id laboris officia dolor do fugiat aliquip deserunt non sint voluptate sit non cillum exercitation.',
-      link: t('Learn more')
-    },
-    {
-      name: t('REST Client'),
-      description: 'Aliquip laboris deserunt officia consequat nulla nostrud magna duis pariatur. Voluptate sit minim excepteur ad. Id laboris officia dolor do fugiat aliquip deserunt non sint voluptate sit non cillum exercitation.',
-      link: t('Learn more')
+      description: t('Maintenance description')
     }
   ]
   return (
@@ -42,11 +43,6 @@ const Services = () => {
             viewport={{ once: false, amount: 0.2 }}
             className='flex-1 lg:bg-services lg:bg-cover lg:bg-bottom lg:bg-no-repeat mb-12 lg:mb-0 text-accent'
           >
-
-            {/* <h3 className='h3 max-w-[455px] mb-16'>
-              {t(`I am a Freelance Front-end developer with over 4 years of professional experience`)}
-            </h3> */}
-            {/* <button className='btn btn-sm'>See my work</button> */}
           </motion.div>
           <motion.div
             variants={fadeIn('left', 0.2, 0.1)}
@@ -54,7 +50,7 @@ const Services = () => {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.2 }}
           >
-            {services.map(({ name, description, link }, idx) => (
+            {services.map(({ name, description }, idx) => (
               <div className='border-b-2 border-accent/40 h-[180px] mb-[38px] flex' key={idx}>
                 <div className='max-w-[467px] text-primary'>
                   <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>{name}</h4>

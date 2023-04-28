@@ -61,6 +61,14 @@
         "c": "Utilisé React pour le frontend (sans hooks personnalisés) avec des anciennes méthodes de réducteurs et de créateurs d'actions (Redux)",
         "repo": "https://github.com/Sadboiss"
     },
+    "Project portfolio": "Portfolio de projet",
+    "Project portfolio description": "A website portfolio is an essential tool for any professional who wants to showcase their work online. If you're looking to create a website portfolio that showcases your skills and accomplishments, you've come to the right place.",
+    "Full-fledged application": "Application complète",
+    "Full-fledged application description": "Si votre projet est un peu plus complexe et que vous recherchez une solution complète, j'ai ce qu'il vous faut. Ensemble, nous pouvons concrétiser vos idées brillantes. Je travaillerai avec vous pour concevoir, conceptualiser et construire votre projet à partir de zéro.",
+    "Hosting/Infrastructure": "Infrastructure/Hébergement de site web",
+    "Hosting/Infrastructure description": "Si vous avez des difficultés à trouver des moyens d'héberger votre site web, ou si vous ne comprenez tout simplement pas le processus, pas besoin de s'inquiéter. Je suis là pour vous aider.",
+    "Maintenance": "Maintenance",
+    "Maintenance description": "Je vais maintenir votre site web et m'assurer qu'il reste à jour avec les dernières technologies, garantissant ainsi son fonctionnement continu.",
     "Designed and implemented an online store application from start to finish using React JS and Redux": "",
     "Use of custom hooks through out the frontend to make use of better implementation design": "",
     "Successfully developed a REST API backend in with NodeJS": "",
@@ -73,7 +81,7 @@
     "Contact me": "Contactez moi",
     "Send email": "Envoyer courriel",
     "I am a": "Je suis un",
-    "Senior Fullstack developer": "Développeur fullstack sénior",
+    "Senior Fullstack Developer": "Développeur Fullstack Sénior",
     "Home": "Acceuil",
     "About": "À Propos",
     "Services": "Services",
@@ -89,5 +97,7 @@
     "Click here to access": "Cliquez ici pour accéder",
     "Your request": "Votre demande",
     "Wrong format": "Mauvais format",
-    "Is required": "Champ obligatoire"
+    "Is required": "Champ obligatoire",
+    "Description": "Description",
+    "Describe your project": "Décrivez votre projet"
 }

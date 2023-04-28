@@ -13,7 +13,6 @@ const useOnScreen = (ref, rootMargin = '0px') => {
             }
         )
         if (ref.current) {
-            console.log(observer)
             observer.observe(ref.current)
         }
         return () => {

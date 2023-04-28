@@ -5,7 +5,6 @@ import { GITHUB_PROFILE_URL, LINKEDIN_URL } from '../common'
 
 export const CV = () => {
     const { t } = useTranslation()
-    const [open, setOpen] = React.useState(false)
 
     const PersonalInfo = [
         { icon: <FaMap />, text: t('Montreal, QC') },
@@ -116,7 +115,7 @@ export const CV = () => {
     ]
 
     return (
-        <div className='flex flex-col h-full text-primary w-full gap-11 scroll-smooth md:flex-row md:max-h-[70vh]'>
+        <div className='flex flex-col h-full text-primary w-full gap-11 scroll-smooth md:flex-row md:max-h-[70vh] p-4'>
             <div className="flex flex-col gap-y-10">
                 <div>
                     <span className='h4'>{t('Personal information')}</span>

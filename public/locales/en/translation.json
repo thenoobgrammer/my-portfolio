@@ -61,6 +61,14 @@
         "c": "Used React for the frontend (no custom hooks) with old school reducers and action creators (Redux)",
         "repo": "https://github.com/Sadboiss"
     },
+    "Project portfolio": "Project portfolio",
+    "Project portfolio description": "A website portfolio is an essential tool for any professional who wants to showcase their work online. If you're looking to create a website portfolio that showcases your skills and accomplishments, I will help you.",
+    "Full-fledged application": "Full-fledged application",
+    "Full-fledged application description": "If your project is a bit more complex and you're looking for a complete solution, I have you covered. Together, we can turn your brilliant ideas into reality. I will work with you to design, conceptualize, and build your project from scratch.",
+    "Hosting/Infrastructure": "Hosting/Infrastructure",
+    "Hosting/Infrastructure description": "If you're having trouble finding ways to host your website, or you simply don't understand the process, there's no need to worry. I'm here to help you with that.",
+    "Maintenance": "Maintenance",
+    "Maintenance description": "I will maintain your website and ensure that it stays up-to-date with the latest technologies, guaranteeing its continuous functionality.",
     "Designed and implemented an online store application from start to finish using React JS and Redux": "Designed and implemented an online store application from start to finish using React JS and Redux",
     "Use of custom hooks through out the frontend to make use of better implementation design": "Use of custom hooks through out the frontend to make use of better implementation design",
     "Successfully developed a REST API backend in with NodeJS": "Successfully developed a REST API backend in with NodeJS",
@@ -89,5 +97,7 @@
     "Click here to access": "Click here to access",
     "Your request": "Your request",
     "Wrong format": "Field in the wrong format",
-    "Is required": "Field required"
+    "Is required": "Field required",
+    "Description": "Description",
+    "Describe your project": "Describe your project"
 }

@@ -36,6 +36,7 @@ const Header = () => {
         <div className='hidden md:flex'>
           {Links.map(({ path, offset = 0, description, icon }, idx) => (
             <Link
+              key={idx}
               to={path}
               offset={offset}
               activeClass='active'
@@ -74,6 +75,7 @@ const Header = () => {
           <div>
             {Links.map(({ path, offset = 0, description, icon }, idx) => (
               <Link
+                key={idx}
                 to={path}
                 offset={offset}
                 activeClass='active'

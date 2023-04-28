@@ -27,7 +27,7 @@ const Modale = ({
                     className="w-[95%] fixed  m-auto md:top-0 max-h-[75%] md:max-w-fit z-[60] inset-0 overflow-hidden"
                 >
                     <div className="max-h-full overflow-hidden flex flex-col bg-white border shadow-sm rounded-md">
-                        <div className="flex justify-between items-center py-3 px-4 border-b ">
+                        <div className="flex justify-between items-center py-3 pl-8 pr-4 border-b ">
                             <h3 className="h3 text-primary mb-0">
                                 {title}
                             </h3>
