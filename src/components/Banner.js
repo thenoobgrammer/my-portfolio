@@ -68,8 +68,8 @@ const Banner = () => {
               className='mb-12 mx-auto lg:mx-0'
             >
               <Modale
-                ctaSave='Send email'
-                title='Contact form'
+                ctaSave={t('Send email')}
+                title={t('Your request')}
                 buttonName={t('Contact me')}
                 open={open}
                 handleOpen={() => setOpen(true)}

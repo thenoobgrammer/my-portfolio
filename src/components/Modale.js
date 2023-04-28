@@ -28,9 +28,9 @@ const Modale = ({
                 >
                     <div className="max-h-full overflow-hidden flex flex-col bg-white border shadow-sm rounded-md">
                         <div className="flex justify-between items-center py-3 px-4 border-b ">
-                            <span className="h3 mb-0">
+                            <h3 className="h3 mb-0">
                                 {title}
-                            </span>
+                            </h3>
                             <button type="button" onClick={handleClose} className="hs-dropdown-toggle inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-500 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition-all text-sm dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800" data-hs-overlay="#hs-scroll-inside-body-modal">
                                 <span className="sr-only">Close</span>
                                 <BsX size={30} />

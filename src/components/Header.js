@@ -49,7 +49,7 @@ const Header = () => {
         <div className='flex gap-x-4'>
           <LangSwitcher />
           <Modale
-            title={t('My CV')}
+            title={t('Antoine Hakim, Senior Frontend Engineer')}
             buttonName={t('My CV')}
             open={openCV}
             handleOpen={() => setOpenCV(true)}

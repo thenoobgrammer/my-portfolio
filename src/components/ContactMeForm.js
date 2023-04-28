@@ -35,34 +35,40 @@ const ContactForm = ({ onClose, }) => {
                 setLoading(false)
             })
     }
-    const Area = ({ name, label, register, required, ...props }) => (
+    const Area = ({ name, label, register, required = true, ...props }) => (
         <div className='flex flex-col text-start text-[18px]'>
-            <label className='block text-gray-700 font-bold mb-2' htmlFor={name}>{label}</label>
+            <label className='block text-gray-700 font-bold mb-2' htmlFor={name}>
+                {label}
+                {required && <span className='text-red-500 ml-2'>*</span>}
+            </label>
             <textarea
                 className='shadow appearance-none border rounded-md w-full py-4 px-4 text-gray-700 leading-tight focus:outline-accent focus:shadow-outline'
                 rows='5'
                 cols='69'
                 name={name}
                 aria-invalid={errors[name] ? "true" : "false"}
-                {...register(name, { required: true })}
+                {...register(name, { required })}
                 {...props}
             />
-            {errors[name]?.type === 'required' && <p className='text-red-500' role="alert">{label} is required</p>}
+            {errors[name]?.type === 'required' && <p className='text-red-500' role="alert">{t(`Is required`)}</p>}
         </div>
     )
 
-    const Input = ({ name, label, register, required, pattern, ...props }) => (
+    const Input = ({ name, label, register, required = true, pattern, ...props }) => (
         <div className='flex flex-col text-start text-[18px]'>
-            <label className=' block text-gray-700 font-bold mb-2' htmlFor={name}>{label}</label>
+            <label className=' block text-gray-700 font-bold mb-2' htmlFor={name}>
+                {label}
+                {required && <span className='text-red-500 ml-2'>*</span>}
+            </label>
             <input
                 className='shadow appearance-none border rounded-md w-full py-4 px-4 text-gray-700 leading-tight focus:outline-accent focus:shadow-outline'
                 name={name}
                 aria-invalid={errors[name] ? "true" : "false"}
-                {...register(name, { required: true, pattern })}
+                {...register(name, { required, pattern })}
                 {...props}
             />
-            {errors[name]?.type === 'required' && <p className='text-red-500' role="alert">{label} is required</p>}
-            {errors[name]?.type === 'pattern' && <p className='text-red-500' role="alert">{t(`${label} is in the wrong format.`)}</p>}
+            {errors[name]?.type === 'required' && <p className='text-red-500' role="alert">{t(`Is required`)}</p>}
+            {errors[name]?.type === 'pattern' && <p className='text-red-500' role="alert">{t(`Wrong format`)}</p>}
         </div>
     )
 

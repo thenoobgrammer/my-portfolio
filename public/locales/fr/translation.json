@@ -17,51 +17,66 @@
     "Work experience": "Expériences profesionnelles",
     "Technologies": "Technologies",
     "Personal highlights": "Projets personels",
-    "In progress": "En progr",
-
+    "In progress": "En progrès",
     "Banner.intro": "Si vous recherchez un développeur web compétent et passionné par la création de sites web beaux et fonctionnels, ne cherchez plus ! Avec 4 ans d'expérience dans le domaine, je suis déterminé à fournir un travail de qualité supérieure qui répond aux besoins de mes clients et dépasse leurs attentes. Que vous cherchiez un site web simple et élégant ou une plateforme complexe et riche en fonctionnalités, j'ai l'expertise et la créativité pour donner vie à votre vision. Travaillons ensemble pour construire quelque chose d'incroyable !",
-
     "GoTo": {
-        "a": "Développer des modules existants dans une nouvelle platforme plus moderne, aidant à la transition d'au moins 65% des clients existants",
-        "b": "Travail en parallèle avec l'équipe UI/UX dans le but d'apporter la meilleure expérience utilisateur",
-        "c": "Développement de composants modulaire pour l'interne, utilisé parmis plusieurs autres équipes",
-        "d": "Développement en mode feature-first, aidant les clients ou bien les reviewers de voir le status d'une nouvelle feature"
+        "a": "En charge de la transition des fonctionnalités héritées (modulairement) vers une plateforme plus récente développée avec React, permettant à 85% des clients d'avoir une expérience plus moderne",
+        "b": "Création de composants entièrement fonctionnels, testés et documentés pour que les équipes internes les utilisent à travers les sous-modules tout au long de leur développement",
+        "c": "Collaboration avec l'UI/UX pour offrir une meilleure expérience aux clients existants et potentiels",
+        "d": "Démonstration des fonctionnalités devant les clients, mettant en valeur les efforts de l'équipe"
     },
-    
     "Desjardins": {
-        "a": "Lead the development and introduced rigorous coding standards of our frontend application in Typescript using StencilJS",
-        "b": "Developed new features for Desjardins' applications using the latest trends in tech and architecture",
-        "c": "Successfully set up our continuous integration pipeline from scratch which improved our deployment performance significantly (~5x) using Concourse CI",
-        "d": "Successfully setup an API for our backend to accept calls from other internal applications using Spring Boot"
+        "a": "Chef de développement et introduction de normes de codage rigoureuses pour notre application frontend en Typescript à l'aide de StencilJS",
+        "b": "Développement de nouvelles fonctionnalités pour les applications de Desjardins en utilisant les dernières tendances en matière de technologie et d'architecture",
+        "c": "Configuration réussie de notre pipeline d'intégration continue à partir de zéro, ce qui a considérablement amélioré nos performances de déploiement (~5x) en utilisant Concourse CI",
+        "d": "Configuration réussie d'une API pour que notre backend accepte les appels d'autres applications internes en utilisant Spring Boot"
     },
-
     "Bell": {
-        "a": "Team lead for the entire lifecycle of the project. Created the UX design and the entire base architecture of the app's frontend",
-        "b": "Created automated testing (unit and integration testing) for every new feature added",
-        "c": "After project completion, switched to the backend team and helped develop and maintain new features in C#",
-        "d": "Debug, fixed a complex database system and helped update the backend automated migrations scripts"
+        "a": "Chef d'équipe pour l'ensemble du cycle de vie du projet. Création de la conception UX et de l'architecture de base complète de l'application frontend",
+        "b": "Création de tests automatisés (tests unitaires et d'intégration) pour chaque nouvelle fonctionnalité ajoutée",
+        "c": "Après l'achèvement du projet, passage à l'équipe backend et aide au développement et à la maintenance de nouvelles fonctionnalités en C#",
+        "d": "Débogage, correction d'un système de base de données complexe et aide à la mise à jour des scripts de migration automatisés du backend"
     },
-
+    "Discord": {
+        "a": "Développement d'un bot Discord avec des commandes intégrées et un système de file d'attente qui lit de la musique à travers les canaux en utilisant uniquement NodeJS",
+        "b": "Configuration d'une instance EC2 avec une configuration automatisée à l'aide de Terraform et Ansible, permettant à mon bot de fonctionner 24/7 dessus",
+        "repo": "https://github.com/thenoobgrammer/bramble"
+    },
+    "Portfolio": {
+        "a": "Développement d'un site web de portfolio en utilisant ReactJS et Tailwind CSS",
+        "b": "Configuration d'un bucket S3 hébergé de manière statique qui s'exécute sur une zone hébergée, me permettant de synchroniser automatiquement les modifications apportées au site web d'un simple commande",
+        "c": "Utilisation de plusieurs bibliothèques telles que EmailJS pour les contacts clients et i18n-next pour la gestion des localisations",
+        "repo": "https://github.com/thenoobgrammer/my-portfolio"
+    },
+    "Pickside": {
+        "a": "Éventuellement destiné à devenir un planificateur/organisateur d'événements sportifs dans plusieurs régions (Québec, Toronto, etc...)",
+        "b": "Développé une API REST avec une authentification de jeton d'ours OAuth, en NodeJS qui est également connectée à un serveur MongoDB",
+        "c": "Frontend connecté au service de carte officiel de Google qui deviendra éventuellement viable lorsque le code sera entièrement construit",
+        "d": "Développé le frontend en React 18 avec un référentiel bien structuré utilisant des hooks personnalisés et Material-UI (passera éventuellement à Tailwind CSS).",
+        "repo": "https://github.com/PickSide"
+    },
+    "Sadboiss": {
+        "a": "Développé un petit site de commerce électronique avec un panier fonctionnel, un système de connexion et un système de paiement tenté",
+        "b": "Utilisé C# pour le backend avec une base de données MySQL structurée et un système de migration",
+        "c": "Utilisé React pour le frontend (sans hooks personnalisés) avec des anciennes méthodes de réducteurs et de créateurs d'actions (Redux)",
+        "repo": "https://github.com/Sadboiss"
+    },
     "Designed and implemented an online store application from start to finish using React JS and Redux": "",
     "Use of custom hooks through out the frontend to make use of better implementation design": "",
     "Successfully developed a REST API backend in with NodeJS": "",
     "Implemented an Auth0 support for authentication through the backend": "",
     "Attached a functional mongodb database to my backend with an initializer script that populates collections upon first start": "",
-
     "Full name": "Nom complet",
     "Email": "Courriel",
     "Inquiry": "Raison de contact",
     "Contact form": "Formulaire de contact",
     "Contact me": "Contactez moi",
     "Send email": "Envoyer courriel",
-
     "I am a": "Je suis un",
     "Senior Fullstack developer": "Développeur fullstack sénior",
-    
     "Home": "Acceuil",
     "About": "À Propos",
     "Services": "Services",
-
     "About me": "À propos de moi",
     "I'm Fullstack developer with over 4 years of experience": "Je suis un développeur indépendant avec plus de 4 ans d'expériences profesionnelles",
     "Years of": "Années de",
@@ -70,5 +85,9 @@
     "Completed": "Completés",
     "Clients": "Clients",
     "Satisfied": "Satisfais",
-    "About me content": "Bonjour! Je suis Tony et je suis passionné par l'aide aux personnes pour la création de leur présence en ligne. Mon expertise réside dans la création de sites web personnalisés, adaptés à vos besoins uniques. Que vous soyez un propriétaire de petite entreprise cherchant à établir une présence en ligne, ou un particulier souhaitant présenter votre portfolio, je peux vous aider à donner vie à votre vision. J'ai de l'expérience dans l'utilisation d'une variété d'outils et de technologies de développement web, et je suis toujours désireux d'apprendre de nouvelles compétences et de rester à jour avec les dernières tendances de l'industrie."
+    "About me content": "Bonjour! Je suis Tony et je suis passionné par l'aide aux personnes pour la création de leur présence en ligne. Mon expertise réside dans la création de sites web personnalisés, adaptés à vos besoins uniques. Que vous soyez un propriétaire de petite entreprise cherchant à établir une présence en ligne, ou un particulier souhaitant présenter votre portfolio, je peux vous aider à donner vie à votre vision. J'ai de l'expérience dans l'utilisation d'une variété d'outils et de technologies de développement web, et je suis toujours désireux d'apprendre de nouvelles compétences et de rester à jour avec les dernières tendances de l'industrie.",
+    "Click here to access": "Cliquez ici pour accéder",
+    "Your request": "Votre demande",
+    "Wrong format": "Mauvais format",
+    "Is required": "Champ obligatoire"
 }
