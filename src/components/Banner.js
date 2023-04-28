@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from '../assets/avatar.svg'
 import ContactMeForm from './ContactMeForm'
 import Modale from './Modale'
 import { TypeAnimation } from 'react-type-animation'
