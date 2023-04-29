@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import { useTranslation } from 'react-i18next'
-import CodingImg from '../assets/coding.png'
 
 const Services = () => {
   const { t } = useTranslation()
