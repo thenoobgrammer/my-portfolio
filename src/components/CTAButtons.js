@@ -1,6 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const CTAButtons = ({ isSubmit = false, disabled = false, noSave = false, saveLabel = 'Save', closeLabel = 'Close', onSave, onClose }) => {
+    const { t } = useTranslation()
+
     return (
         <div className="flex items-center justify-end p-6 rounded-b">
             <button
@@ -8,7 +11,7 @@ const CTAButtons = ({ isSubmit = false, disabled = false, noSave = false, saveLa
                 type="button"
                 onClick={onClose}
             >
-                {closeLabel}
+                {t(closeLabel)}
             </button>
             {!noSave &&
                 <button
@@ -17,7 +20,7 @@ const CTAButtons = ({ isSubmit = false, disabled = false, noSave = false, saveLa
                     disabled={disabled}
                     onClick={onSave}
                 >
-                    {saveLabel}
+                    {t(saveLabel)}
                 </button>
             }
         </div>
