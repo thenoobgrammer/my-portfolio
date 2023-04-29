@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <>
       <div className={`flex justify-between items-center h-24 max-w-[80%] md:max-w-[90%] mx-auto px-4 text-primary`} ref={ref}>
-        <a href='/' className='w-16 h-8'>
+        <a href='/' className='w-10 h-6 md:w-16 md:h-8'>
           <img src={Logo} alt='' />
         </a>
         <div className='hidden md:flex'>

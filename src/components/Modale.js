@@ -24,7 +24,7 @@ const Modale = ({
                     initial='hidden'
                     whileInView={'show'}
                     id="hs-scroll-inside-body-modal"
-                    className="w-[95%] fixed  m-auto md:top-0 max-h-[75%] md:max-w-fit z-[60] inset-0 overflow-hidden"
+                    className="w-[95%] fixed m-auto md:top-0 max-h-[85%] md:max-w-fit z-[60] inset-0 overflow-hidden"
                 >
                     <div className="max-h-full overflow-hidden flex flex-col bg-white border shadow-sm rounded-md">
                         <div className="flex justify-between items-center py-3 pl-8 pr-4 border-b ">

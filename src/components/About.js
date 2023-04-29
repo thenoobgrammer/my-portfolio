@@ -22,7 +22,7 @@ const About = () => {
       viewport={{ once: false, amount: 0.2 }}
       className="w-fit flex gap-x-4 text-[#efefef]"
     >
-      <div className='text-[60px] font-primary font-semibold leading-10'>
+      <div className='text-[40px] md:text-[60px] font-primary font-semibold leading-10'>
         {
           inView ?
             <CountUp start={start} end={end} duration={2} className='font-medium' />
@@ -31,10 +31,10 @@ const About = () => {
         }
       </div>
       <div className='font-primary text-sm tracking-[2px] flex flex-col text-start align-start'>
-        <span className='text-[20px]'>
+        <span className='text-[15px] md:text-[20px]'>
           {topText}
         </span>
-        <span className='text-[20px]'>
+        <span className='text-[15px] md:text-[20px]'>
           {bottomText}
         </span>
       </div>
