@@ -15,7 +15,6 @@ import { useTranslation } from 'react-i18next';
 
 const Banner = () => {
   const { t } = useTranslation()
-  const isMobile = useScreenSize()
   const [open, setOpen] = React.useState(false)
 
   const TypeAnimationTitle = () => React.useMemo(() => (
@@ -34,13 +33,13 @@ const Banner = () => {
   return (
     <section className='section flex flex-col lg:flex-row items-center' id='home'>
       <div className='container mx-auto'>
-        <div className='flex flex-col h-full gap-y-8 lg:flex-row lg:items-center lg:gap-x-12  justify-between'>
+        <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12 justify-between'>
           <motion.div
             variants={fadeIn('', 0.3, 0.1)}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-            className='lg:hidden max-w-[450px] max-h-[482px] mx-auto'>
+            className='mx-auto max-w-[220px] md:max-w-auto lg:hidden'>
             <img src={Profile1} alt='' />
           </motion.div>
           <div className='flex-1 text-center lg:text-left'>
@@ -49,7 +48,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='text-[55px] font-bold leading-[0.8] lg:text-[90px] text-primary'
+              className='font-bold leading-[0.8] lg:text-[90px] text-primary'
             >
               ANTOINE <span>HAKIM</span>
             </motion.h1>
@@ -75,7 +74,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-8 w-full text-center lg:text-justify mx-auto lg:mx-0 text-primary'
+              className='mb-8 w-full text-[15px] sm:text-[20px] text-center lg:text-justify mx-auto lg:mx-0 text-primary'
             >
               {t(`Banner.intro`)}
             </motion.p>

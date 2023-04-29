@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
+import CodingImg from '../assets/coding.png'
 
 const Services = () => {
   const { t } = useTranslation()
@@ -25,7 +26,7 @@ const Services = () => {
   ]
   return (
     <section className='section' id='services'>
-      <div className='container mx-auto space-y-32'>
+      <div className='container mx-auto'>
         <motion.h2
           variants={fadeIn('', 0.3, 0.6)}
           initial='hidden'
@@ -41,7 +42,7 @@ const Services = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.2 }}
-            className='flex-1 lg:bg-services lg:bg-cover lg:bg-bottom lg:bg-no-repeat mb-12 lg:mb-0 text-accent'
+            className='lg:flex-1 bg-services bg-cover bg-bottom bg-no-repeat mb-12 lg:mb-0'
           >
           </motion.div>
           <motion.div

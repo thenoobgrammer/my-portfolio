@@ -59,6 +59,6 @@
 		@apply text-base;
 	}
 	.section {
-		@apply py-8 lg:py-24 lg:h-screen flex items-center h-screen;
+		@apply py-8 lg:py-24 flex items-center md:h-screen;
 	}
 }
