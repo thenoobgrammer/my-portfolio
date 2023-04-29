@@ -42,7 +42,7 @@ const Services = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.2 }}
-            className='lg:flex-1 bg-services bg-cover bg-bottom bg-no-repeat mb-12 lg:mb-0'
+            className='mb-12 lg:flex-1 lg:bg-services lg:bg-cover lg:bg-bottom lg:bg-no-repeats'
           >
           </motion.div>
           <motion.div
@@ -52,12 +52,16 @@ const Services = () => {
             viewport={{ once: false, amount: 0.2 }}
           >
             {services.map(({ name, description }, idx) => (
-              <div className='border-b-2 border-accent/40 h-[180px] mb-[38px] flex' key={idx}>
+              <>
                 <div className='max-w-[467px] text-primary'>
-                  <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>{name}</h4>
+                  <h4 className='xs:text-[15px] md:text-[20px] md:tracking-wider font-primary font-semibold'>{name}</h4>
                   <p className='leading-tight'>{description}</p>
+
+
                 </div>
-              </div>
+                <div className='border-b-2 border-accent/40 my-8 flex' key={idx}>
+                </div>
+              </>
             ))}
           </motion.div>
         </div>
