@@ -13,9 +13,6 @@ const Modale = ({
     handleClose,
     footerContent,
 }) => {
-
-    //const isMobile = useScreenSize()
-
     const Dialog = () => {
         return (
             <>
