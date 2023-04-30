@@ -30,7 +30,7 @@ const Services = () => {
           variants={fadeIn('', 0.3, 0.6)}
           initial='hidden'
           whileInView={'show'}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true }}
         >
           {t('Services')}
         </motion.h2>
@@ -41,7 +41,7 @@ const Services = () => {
             variants={fadeIn('right', 0.3, 0.1)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true }}
             className='mb-12 lg:flex-1 lg:bg-services lg:bg-center lg:bg-contain lg:bg-no-repeat'
           >
           </motion.div>
@@ -49,7 +49,7 @@ const Services = () => {
             variants={fadeIn('left', 0.2, 0.1)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true }}
           >
             {services.map(({ name, description }, idx) => (
               <>

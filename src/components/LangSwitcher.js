@@ -2,6 +2,7 @@ import React from 'react'
 import { I18nContext } from 'react-i18next'
 import { useComponentVisibile } from '../hooks'
 import { supportedLangs } from '../common/constants'
+import Button from './Button'
 
 const LangSwitcher = () => {
     const { i18n } = React.useContext(I18nContext)
@@ -15,13 +16,13 @@ const LangSwitcher = () => {
 
     return (
         <div className="relative flex flex-wrap">
-            <button
+            <Button
                 className={"text-primary font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg"}
                 type="button"
                 onClick={() => setIsComponentVisible(true)}
             >
                 {i18n.language}
-            </button>
+            </Button>
             <div className="absolute top-11 -left-4 sm:w-6/12 md:w-4/12 px-4" ref={ref}>
                 {isComponentVisible &&
                     <div

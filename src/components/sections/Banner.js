@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants'
 import { socialLinks } from '../../common'
 import { useTranslation } from 'react-i18next';
+import Button from '../Button';
 
 const Banner = () => {
   const { t } = useTranslation()
@@ -33,16 +34,16 @@ const Banner = () => {
             variants={fadeIn('', 0.3, 0.1)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true }}
             className='mx-auto max-w-[220px] md:max-w-auto lg:hidden'>
             <img src={Profile1} alt='' />
           </motion.div>
-          <div className='flex-1 text-center lg:text-left'>
+          <div className='flex-col justify-center text-center lg:text-left'>
             <motion.h1
-              variants={fadeIn('down', 0.3, 0.1)}
+              variants={fadeIn('left', 0.3, 0.1)}
               initial='hidden'
               whileInView={'show'}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true }}
               className='font-bold leading-[0.8] text-[30px] lg:text-[60px] xl:text-[80px] text-primary'
             >
               <span>ANTOINE HAKIM</span>
@@ -51,15 +52,15 @@ const Banner = () => {
               variants={fadeIn('right', 0.3, 0.1)}
               initial='hidden'
               whileInView={'show'}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true }}
               className=' text-primary border-b-2 my-3'
             >
             </motion.h1>
             <motion.div
-              variants={fadeIn('down', 0.4, 0.1)}
+              variants={fadeIn('left', 0.4, 0.1)}
               initial='hidden'
               whileInView={'show'}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true }}
               className='mb-6 text-[25px] lg:text-[30px] xl:text-[40px] font-semibold leading-[1]'
             >
               <TypeAnimationTitle />
@@ -68,49 +69,52 @@ const Banner = () => {
               variants={fadeIn('right', 0.5, 0.1)}
               initial='hidden'
               whileInView={'show'}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true }}
               className='mb-8 w-full lg:text-[18px] text-center lg:text-justify mx-auto lg:mx-0 text-primary'
             >
               {t(`Banner.intro`)}
             </motion.p>
-            <motion.div
-              variants={fadeIn('up', 0.3, 0.1)}
-              initial='hidden'
-              whileInView={'show'}
-              viewport={{ once: false, amount: 0.7 }}
-              className='mb-8 mx-auto lg:mx-0'
-            >
-              <Modale
-                ctaSave={t('Send email')}
-                title={t('Your request')}
-                buttonName={t('Contact me')}
-                open={open}
-                handleOpen={() => setOpen(true)}
-                handleClose={() => setOpen(false)}
+            <div className='flex flex-col'>
+              <motion.div
+                variants={fadeIn('', 0.3, 0.1)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{ once: true }}
+                className='mb-8 mx-auto lg:mx-0'
               >
-                <ContactMeForm onClose={() => setOpen(false)} />
-              </Modale>
-
-            </motion.div>
-            <motion.div
-              variants={fadeIn('up', 0.3, 0.1)}
-              initial='hidden'
-              whileInView={'show'}
-              viewport={{ once: false, amount: 0.7 }}
-              className='flex gap-x-6 max-w-max mx-auto lg:mx-0'
-            >
-              {socialLinks.map(({ name, ref, icon }, idx) => (
-                <a href={ref} target="_blank" rel='noreferrer' className='text-primary href' key={idx}>
-                  {icon}
-                </a>
-              ))}
-            </motion.div>
+                <Modale
+                  ctaSave={t('Send email')}
+                  title={t('Your request')}
+                  buttonName={t('Contact me')}
+                  open={open}
+                  handleOpen={() => setOpen(true)}
+                  handleClose={() => setOpen(false)}
+                >
+                  <ContactMeForm onClose={() => setOpen(false)} />
+                </Modale>
+              </motion.div>
+              <motion.div
+                variants={fadeIn('up', 0.3, 0.1)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{ once: true }}
+                className='flex gap-x-4 mx-auto lg:mx-0'
+              >
+                {socialLinks.map(({ name, ref, icon }, idx) => (
+                  <Button noBackground={true} className='p-0'>
+                    <a href={ref} target="_blank" rel='noreferrer' className='text-primary href' key={idx}>
+                      {icon}
+                    </a>
+                  </Button>
+                ))}
+              </motion.div>
+            </div>
           </div>
           <motion.div
             variants={fadeIn('', 0.3, 0.1)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true }}
             className='hidden lg:flex lg:max-w-lg -mt-[220px]'>
             <img src={Profile1} alt='' />
           </motion.div>

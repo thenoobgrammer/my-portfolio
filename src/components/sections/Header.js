@@ -12,6 +12,7 @@ import CTAButtons from '../CTAButtons'
 import Modale from '../Modale'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants'
+import Button from '../Button';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
@@ -35,19 +36,21 @@ const Header = () => {
         </a>
         <div className='hidden md:flex'>
           {Links.map(({ path, offset = 0, description, icon }, idx) => (
-            <Link
-              key={idx}
-              to={path}
-              offset={offset}
-              activeClass='active'
-              smooth={true}
-              spy={true}
-              onClick={() => mobileMenuOpen && setMobileMenuOpen(false)}
-              className='flex flex-col items-center justify-center cursor-pointer text-primary href p-4'
-            >
-              {icon}
-              <span className='text-[18px] font-medium'>{t(description)}</span>
-            </Link>
+            <Button noBackground={true}>
+              <Link
+                key={idx}
+                to={path}
+                offset={offset}
+                activeClass='active'
+                smooth={true}
+                spy={true}
+                onClick={() => mobileMenuOpen && setMobileMenuOpen(false)}
+                className='flex flex-col items-center justify-center cursor-pointer text-primary href gap-y-2'
+              >
+                {icon}
+                <span className='text-[18px] font-medium'>{t(description)}</span>
+              </Link>
+            </Button>
           ))}
         </div>
         <div className='flex gap-x-4'>
@@ -63,17 +66,17 @@ const Header = () => {
             <CV />
           </Modale>
         </div>
-        <div onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className='block cursor-pointer z-0 md:hidden'>
+        <div onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className='block cursor-pointer z-40 md:hidden'>
           {mobileMenuOpen ? <BiX size={24} /> : <BiMenu size={24} />}
         </div>
         <motion.div
           variants={fadeIn('top', 0, 0.1)}
           initial='hidden'
           whileInView={'show'}
-          className={mobileMenuOpen ? 'fixed p-20 flex flex-col gap-y-5 top-24 items-center left-0 w-full h-auto z-30 border-r-gray-900 bg-white' : 'fixed top-[-100%]'}
+          className={mobileMenuOpen ? 'fixed p-20 flex flex-col gap-y-5 top-0 left-0 items-center w-full h-auto z-30 border-r-gray-900 bg-white' : 'hidden'}
         >
-          <div>
-            {Links.map(({ path, offset = 0, description, icon }, idx) => (
+          {Links.map(({ path, offset = 0, description, icon }, idx) => (
+            <Button noBackground={true}>
               <Link
                 key={idx}
                 to={path}
@@ -82,14 +85,13 @@ const Header = () => {
                 smooth={true}
                 spy={true}
                 onClick={() => mobileMenuOpen && setMobileMenuOpen(false)}
-                className='flex flex-col items-center justify-center cursor-pointer text-primary href p-4'
+                className='flex flex-col items-center justify-center  gap-y-2 cursor-pointer text-primary href '
               >
                 {icon}
                 <span className='text-[22px] font-medium'>{t(description)}</span>
               </Link>
-            ))}
-          </div>
-
+            </Button>
+          ))}
         </motion.div>
       </div>
       {!onScreen &&

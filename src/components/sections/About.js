@@ -19,7 +19,7 @@ const About = () => {
       variants={fadeIn('up', fadeInMs, 0.4)}
       initial='hidden'
       whileInView={'show'}
-      viewport={{ once: false, amount: 0.2 }}
+      viewport={{ once: true }}
       className="w-fit flex gap-x-4 text-[#efefef]"
     >
       <div className='text-[40px] md:text-[60px] font-primary font-semibold leading-10'>
@@ -46,7 +46,7 @@ const About = () => {
       variants={fadeIn('up', fadeInMs, 0.4)}
       initial='hidden'
       whileInView={'show'}
-      viewport={{ once: false, amount: 0.2 }}
+      viewport={{ once: true }}
     >
       <span className=''><img src={icon} alt='' /></span>
     </motion.div>
@@ -64,7 +64,12 @@ const About = () => {
           </div>
           <div className='flex items-center align-middle'>
             <RenderStat topText={t('Years')} bottomText={t('Experience')} start={0} end={4} fadeInMs={0.1} />
-            <div className='border-r h-[60px] ml-6 opacity-30'></div>
+            <motion.div
+              variants={fadeIn('up', 0.2, 0.4)}
+              initial='hidden'
+              whileInView={'show'}
+              viewport={{ once: true }}
+              className='border-r h-[60px] ml-6 opacity-30'></motion.div>
             <div className='flex'>
               <RenderIcon icon={Bell} fadeInMs={0.1} />
               <RenderIcon icon={Desjardins} fadeInMs={0.3} />
