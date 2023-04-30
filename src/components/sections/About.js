@@ -2,11 +2,11 @@ import React from 'react';
 import CountUp from 'react-countup'
 import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
-import { fadeIn } from '../variants'
+import { fadeIn } from '../../variants'
 import { useTranslation } from 'react-i18next'
-import Bell from '../assets/Bell-white.png'
-import Desjardins from '../assets/Desjardins-white.png'
-import GoTo from '../assets/Goto-white.png'
+import Bell from '../../assets/Bell-white.png'
+import Desjardins from '../../assets/Desjardins-white.png'
+import GoTo from '../../assets/Goto-white.png'
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -55,7 +55,7 @@ const About = () => {
   return (
     <section className='bg-primary section' id='about' ref={ref}>
       <div className='container mx-auto text-[#efefef] text-center max-w-3xl'>
-        <div className='flex flex-col align-middle items-center m-auto gap-x-20 gap-y-0'>
+        <div className='wrapper flex flex-col align-middle items-center m-auto gap-x-20 gap-y-0'>
           <div className='border-b mb-6'>
             <h2 className='h2 font-semibold'>{t('Little more about me')}</h2>
             <p className='mb-6'>

@@ -1,8 +1,8 @@
 import React from 'react'
-import Banner from './components/Banner'
-import Header from './components/Header'
-import About from './components/About'
-import Services from './components/Services'
+import Banner from './components/sections/Banner'
+import Header from './components/sections/Header'
+import About from './components/sections/About'
+import Services from './components/sections/Services'
 
 const App = () => {
   return (

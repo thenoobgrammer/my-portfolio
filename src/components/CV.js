@@ -115,7 +115,7 @@ export const CV = () => {
     ]
 
     return (
-        <div className='flex flex-col h-full text-[#2C74B3] w-full gap-11 scroll-smooth md:flex-row md:max-h-[70vh] p-4'>
+        <div className='flex flex-col h-full text-[#2C74B3] text-[18px] w-full gap-11 scroll-smooth md:flex-row md:max-h-[70vh] p-4'>
             <div className="flex flex-col gap-y-10">
                 <div>
                     <span className='h4'>{t('Personal information')}</span>

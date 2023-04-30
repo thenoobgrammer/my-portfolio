@@ -1,17 +1,17 @@
 import React from 'react';
-import BackButton from './BackButton'
+import BackButton from '../BackButton'
 import { useTranslation } from 'react-i18next'
-import Logo from '../assets/logo.svg'
+import Logo from '../../assets/logo.svg'
 import { BiMenu, BiX } from 'react-icons/bi'
 import { Link } from 'react-scroll';
-import { Links } from '../common'
-import { CV } from './CV';
-import { useOnScreen, useScreenSize } from '../hooks'
-import LangSwitcher from './LangSwitcher'
-import CTAButtons from './CTAButtons'
-import Modale from './Modale'
+import { Links } from '../../common'
+import { CV } from '../CV';
+import { useOnScreen, useScreenSize } from '../../hooks'
+import LangSwitcher from '../LangSwitcher'
+import CTAButtons from '../CTAButtons'
+import Modale from '../Modale'
 import { motion } from 'framer-motion'
-import { fadeIn } from '../variants'
+import { fadeIn } from '../../variants'
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <>
-      <div className={`flex justify-between items-center h-24 max-w-[80%] md:max-w-[90%] mx-auto px-4 text-primary`} ref={ref}>
+      <div className={`flex justify-between items-center h-24 mx-auto px-8 text-primary`} ref={ref}>
         <a href='/' className='w-10 h-6 md:w-16 md:h-8'>
           <img src={Logo} alt='' />
         </a>
@@ -46,7 +46,7 @@ const Header = () => {
               className='flex flex-col items-center justify-center cursor-pointer text-primary href p-4'
             >
               {icon}
-              <span className='text-[22px] font-medium'>{t(description)}</span>
+              <span className='text-[18px] font-medium'>{t(description)}</span>
             </Link>
           ))}
         </div>

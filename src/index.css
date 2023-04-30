@@ -14,7 +14,13 @@
 
 @layer base {
 	body {
-		@apply font-primary text-lg leading-8 text-white scrollable;
+		@apply font-primary text-[15px] text-white scrollable;
+	}
+	.section {
+		@apply py-8 px-5 md:px-10 lg:py-24 flex items-center min-h-screen;
+	}
+	.wrapper {
+		@apply flex flex-col lg:flex-row m-auto;
 	}
 	.scrollable {
 		@apply scrollbar-thin scrollbar-thumb-accent scrollbar-track-gray-100;
@@ -45,7 +51,7 @@
 	}
 	.btn {
 		@apply rounded font-primary text-white font-bold bg-[#2C74B3] ease-linear transition-all duration-75 
-		active:bg-secondary focus:bg-secondary hover:bg-secondary uppercase text-sm px-6 py-3 disabled:bg-slate-200 disabled:pointer-events-none;
+		active:bg-secondary focus:bg-secondary hover:bg-secondary uppercase text-sm p-3 disabled:bg-slate-200 disabled:pointer-events-none;
 	}
 	.btn-no-background {
 		@apply text-primary font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1  active:text-secondary focus:text-secondary hover:text-secondary ease-linear transition-all duration-150;
@@ -58,8 +64,5 @@
 	}
 	.btn-link {
 		@apply text-base;
-	}
-	.section {
-		@apply py-8 lg:py-24 flex items-center md:h-screen min-h-screen;
 	}
 }

@@ -1,16 +1,11 @@
 import React from 'react';
-import ContactMeForm from './ContactMeForm'
-import Modale from './Modale'
-import Profile1 from '../assets/profile_pic_1.png'
-import Profile2 from '../assets/profile_pic_2.png'
-import Profile3 from '../assets/profile_pic_3.png'
-import Profile4 from '../assets/profile_pic_4.png'
-import Profile5 from '../assets/profile_pic_5.png'
+import ContactMeForm from '../ContactMeForm'
+import Modale from '../Modale'
+import Profile1 from '../../assets/profile_pic_1.png'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
-import { fadeIn } from '../variants'
-import { socialLinks } from '../common'
-import { useScreenSize } from '../hooks'
+import { fadeIn } from '../../variants'
+import { socialLinks } from '../../common'
 import { useTranslation } from 'react-i18next';
 
 const Banner = () => {
@@ -31,9 +26,9 @@ const Banner = () => {
   ), [])
 
   return (
-    <section className='section flex flex-col lg:flex-row items-center' id='home'>
+    <section className='section flex flex-col lg:flex-row' id='home'>
       <div className='container mx-auto'>
-        <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12 justify-between'>
+        <div className='wrapper gap-x-12 gap-y-12 align-middle items-center'>
           <motion.div
             variants={fadeIn('', 0.3, 0.1)}
             initial='hidden'
@@ -48,9 +43,9 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='font-bold leading-[0.8] text-[30px] lg:text-[90px] text-primary'
+              className='font-bold leading-[0.8] text-[30px] lg:text-[60px] xl:text-[80px] text-primary'
             >
-              ANTOINE <span>HAKIM</span>
+              <span>ANTOINE HAKIM</span>
             </motion.h1>
             <motion.h1
               variants={fadeIn('right', 0.3, 0.1)}
@@ -65,7 +60,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-6 text-[25px] lg:text-[60px] font-semibold leading-[1]'
+              className='mb-6 text-[25px] lg:text-[30px] xl:text-[40px] font-semibold leading-[1]'
             >
               <TypeAnimationTitle />
             </motion.div>
@@ -74,7 +69,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-8 w-full text-[15px] sm:text-[20px] text-center lg:text-justify mx-auto lg:mx-0 text-primary'
+              className='mb-8 w-full lg:text-[18px] text-center lg:text-justify mx-auto lg:mx-0 text-primary'
             >
               {t(`Banner.intro`)}
             </motion.p>
@@ -116,7 +111,7 @@ const Banner = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-            className='hidden -mt-[200px] lg:flex max-w-[450px] lg:max-w-[482px]'>
+            className='hidden lg:flex lg:max-w-lg -mt-[220px]'>
             <img src={Profile1} alt='' />
           </motion.div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion'
-import { fadeIn } from '../variants'
+import { fadeIn } from '../../variants'
 import { useTranslation } from 'react-i18next'
 
 const Services = () => {
@@ -24,24 +24,25 @@ const Services = () => {
     }
   ]
   return (
-    <section className='section' id='services'>
-      <div className='container mx-auto'>
+    <section className='section flex-col justify-center lg:gap-y-16' id='services'>
+      <div className='text-[40px] uppercase text-primary font-semibold text-center'>
         <motion.h2
           variants={fadeIn('', 0.3, 0.6)}
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.2 }}
-          className='text-[40px] uppercase text-primary mb-6 text-center font-semibold'
         >
           {t('Services')}
         </motion.h2>
+      </div>
+      <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row'>
           <motion.div
             variants={fadeIn('right', 0.3, 0.1)}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.2 }}
-            className='mb-12 lg:flex-1 lg:bg-services lg:bg-cover lg:bg-bottom lg:bg-no-repeats'
+            className='mb-12 lg:flex-1 lg:bg-services lg:bg-center lg:bg-contain lg:bg-no-repeat'
           >
           </motion.div>
           <motion.div
