@@ -79,7 +79,7 @@ const ContactForm = ({ onClose, }) => {
             <Input type='email' id='email' name='email' label={t('Email')} register={register} errors={errors} pattern={EMAIL_REGEX_PATTERN} placeholder={t('Email')} />
             <Area id='inquiry' name='inquiry' label={t('Inquiry')} register={register} errors={errors} placeholder={t('Describe your project')} />
             <CTAButtons
-                disabled={!isEmpty(errors) || loading}
+                disabled={loading}
                 loading={loading}
                 saveLabel={t('Send email')}
                 onSave={handleSubmit(onSubmit)}
