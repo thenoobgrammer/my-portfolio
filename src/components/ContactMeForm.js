@@ -10,8 +10,8 @@ const ContactForm = ({ onClose, }) => {
     const { t } = useTranslation()
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm({
-        mode: 'all',
-        reValidateMode: 'onChange',
+       
+        reValidateMode: 'onSubmit',
         resetOptions: {
             keepDirtyValues: false,
             keepErrors: false,
@@ -35,6 +35,7 @@ const ContactForm = ({ onClose, }) => {
                 setLoading(false)
             })
     }
+    
     const Area = ({ name, label, register, required = true, ...props }) => (
         <div className='flex flex-col text-start text-[18px]'>
             <label className='block text-gray-700 font-bold mb-2' htmlFor={name}>
@@ -73,14 +74,13 @@ const ContactForm = ({ onClose, }) => {
     )
 
     return (
-
-
         <form className='max-w-lg flex flex-col gap-y-6' ref={formRef} >
             <Input type='text' id='fullName' name='fullName' label={t('Full name')} register={register} errors={errors} placeholder={t('Full name')} />
             <Input type='email' id='email' name='email' label={t('Email')} register={register} errors={errors} pattern={EMAIL_REGEX_PATTERN} placeholder={t('Email')} />
             <Area id='inquiry' name='inquiry' label={t('Inquiry')} register={register} errors={errors} placeholder={t('Describe your project')} />
             <CTAButtons
                 disabled={!isEmpty(errors) || loading}
+                loading={loading}
                 saveLabel={t('Send email')}
                 onSave={handleSubmit(onSubmit)}
                 onClose={onClose}
