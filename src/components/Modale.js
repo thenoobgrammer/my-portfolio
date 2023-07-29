@@ -1,10 +1,11 @@
-import React from 'react'
-import Button from './Button'
-import { motion } from 'framer-motion'
 import { BsX } from 'react-icons/bs';
+import Button from './Button'
+import React from 'react'
 import { fadeIn } from '../variants'
+import { motion } from 'framer-motion'
 
 const Modale = ({
+    extraTop,
     title = 'Default title',
     children,
     buttonName = 'Default button',
@@ -13,9 +14,6 @@ const Modale = ({
     handleClose,
     footerContent,
 }) => {
-
-    //const isMobile = useScreenSize()
-
     const Dialog = () => {
         return (
             <>
@@ -31,10 +29,13 @@ const Modale = ({
                             <h3 className="h3 text-[#245490] mb-0">
                                 {title}
                             </h3>
-                            <button type="button" onClick={handleClose} className="hs-dropdown-toggle inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-500 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition-all text-sm dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800" data-hs-overlay="#hs-scroll-inside-body-modal">
-                                <span className="sr-only">Close</span>
-                                <BsX size={30} />
-                            </button>
+                            <div className='flex gap-x-5 items-center'>
+                                {extraTop}
+                                <button type="button" onClick={handleClose} className="hs-dropdown-toggle inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-500 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition-all text-sm dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800" data-hs-overlay="#hs-scroll-inside-body-modal">
+                                    <span className="sr-only">Close</span>
+                                    <BsX size={30} />
+                                </button>
+                            </div>
                         </div>
                         <div className="p-4 overflow-y-auto scrollbar">
                             {children}

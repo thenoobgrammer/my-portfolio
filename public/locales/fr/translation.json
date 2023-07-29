@@ -53,7 +53,8 @@
         "b": "Développé une API REST avec une authentification de jeton d'ours OAuth, en NodeJS qui est également connectée à un serveur MongoDB",
         "c": "Frontend connecté au service de carte officiel de Google qui deviendra éventuellement viable lorsque le code sera entièrement construit",
         "d": "Développé le frontend en React 18 avec un référentiel bien structuré utilisant des hooks personnalisés et Material-UI (passera éventuellement à Tailwind CSS).",
-        "repo": "https://github.com/PickSide"
+        "repo": "https://github.com/PickSide",
+        "website": "Allez vers le siteweb"
     },
     "Sadboiss": {
         "a": "Développé un petit site de commerce électronique avec un panier fonctionnel, un système de connexion et un système de paiement tenté",
@@ -93,7 +94,7 @@
     "Clients": "Clients",
     "Satisfied": "Satisfais",
     "About me content": "Bonjour! Je suis Tony et je suis passionné par l'aide aux personnes pour la création de leur présence en ligne. Mon expertise réside dans la création de sites web personnalisés, adaptés à vos besoins uniques. Que vous soyez un propriétaire de petite entreprise cherchant à établir une présence en ligne, ou un particulier souhaitant présenter votre portfolio, je peux vous aider à donner vie à votre vision. J'ai de l'expérience dans l'utilisation d'une variété d'outils et de technologies de développement web, et je suis toujours désireux d'apprendre de nouvelles compétences et de rester à jour avec les dernières tendances de l'industrie.",
-    "Click here to access": "Cliquez ici pour accéder",
+    "Click here to access": "Cliquez ici pour accéder le répertoire",
     "Your request": "Votre demande",
     "Wrong format": "Mauvais format",
     "Is required": "Champ obligatoire",

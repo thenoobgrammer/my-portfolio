@@ -1,21 +1,24 @@
-import React from 'react';
-import BackButton from './BackButton'
-import { useTranslation } from 'react-i18next'
-import Logo from '../assets/logo.svg'
 import { BiMenu, BiX } from 'react-icons/bi'
-import { Link } from 'react-scroll';
-import { Links } from '../common'
-import { CV } from './CV';
 import { useOnScreen, useScreenSize } from '../hooks'
-import LangSwitcher from './LangSwitcher'
+
+import BackButton from './BackButton'
 import CTAButtons from './CTAButtons'
+import { CV } from './CV'
+import CVDownloadLink from './CVDownloadLink'
+import LangSwitcher from './LangSwitcher'
+import { Link } from 'react-scroll'
+import { Links } from '../common'
+import Logo from '../assets/logo.svg'
 import Modale from './Modale'
-import { motion } from 'framer-motion'
+import React from 'react'
 import { fadeIn } from '../variants'
+import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
   const ref = React.useRef()
+
   const [openCV, setOpenCV] = React.useState(false)
   const { t } = useTranslation()
   const isMobile = useScreenSize()
@@ -53,6 +56,7 @@ const Header = () => {
         <div className='flex gap-x-4'>
           <LangSwitcher />
           <Modale
+            extraTop={<CVDownloadLink />}
             title={t('Antoine Hakim, Senior Frontend Engineer')}
             buttonName={t('My CV')}
             open={openCV}

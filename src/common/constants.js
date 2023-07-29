@@ -1,12 +1,13 @@
-
 import { BiHomeAlt, BiUser } from 'react-icons/bi'
+import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa'
+
 import { BsClipboardData } from 'react-icons/bs'
-import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa'
 
 /* Links */
 export const GITHUB_PROFILE_URL = 'https://github.com/thenoobgrammer'
 export const FACEBOOK_URL = 'https://www.facebook.com/antonio.hakim.39/'
 export const LINKEDIN_URL = 'https://www.linkedin.com/in/antoine-hakim-359669105/'
+export const PORTOFLIO_URL = 'https://thenoobgrammer.com'
 
 export const EMAIL_DESTINATION = 'thenoobgrammer@gmail.com'
 export const EMAIL_SUBJECT = 'CLIENT INQUIRY'
