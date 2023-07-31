@@ -29,8 +29,9 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject",
+    "empty-bucket": "aws s3 rm s3://thenoobgrammer.com --recursive",
     "sync": "aws s3 sync ./build s3://thenoobgrammer.com/",
-    "deploy": "npm run build && aws s3 sync ./build s3://thenoobgrammer.com/"
+    "deploy": "npm run build && npm run empty-bucket && npm run sync"
   },
   "eslintConfig": {
     "extends": [
