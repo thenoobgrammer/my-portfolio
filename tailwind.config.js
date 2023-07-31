@@ -7,7 +7,7 @@ module.exports = {
       accent: '#9384D1'
     },
     fontFamily: {
-      primary: ['roboto', 'sans-serif'],
+      primary: ['sans-serif'],
       secondary: '"Roboto Slab"',
       tertiary: 'Aldrich',
     },

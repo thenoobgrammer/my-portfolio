@@ -20,45 +20,129 @@
     "In progress": "In progress",
     "Banner.intro": "If you're looking for a skilled web developer with a passion for creating professional websites, look no further! With 4 years of experience in the field, I'm dedicated to delivering high-quality work that meets my clients' needs and exceeds their expectations. Whether you're looking for a simple, elegant website or a complex, feature-rich platform, I have the expertise and creativity to bring your vision to life. Let's work together to build something amazing!",
     "GoTo": {
-        "a": "In charge of transitionning legacy features (modularly) into a newer platform developed with React, allowing 85% of clients to have a more modern experience",
-        "b": "Created fully functional, tested and documented components for internal teams to use across submodules throughout their development",
-        "c": "Collaborated with UI/UX to bring forth a better experience for existing and potentially new clients",
-        "d": "Demo'ing features in front of clients, showcasing the team's effort"
+        "a": "Developed a high-end business communication settings tool using ReactJS, Redux-Thunk, React-Router, Javascript, Typescript, HTML5, CSS3, and MUI5",
+        "b": "Built and managed custom components for internal libraries, including custom Formik input/select/radio fields",
+        "c": "Exclusively used React-Hooks to handle application life-cycle processes",
+        "d": "Collaborated with the UI/UX team to establish specifications and system designs",
+        "e": "Worked in Agile Methodologies for iterative development to consistently deliver a better application",
+        "f": "Possesses strong expertise in Github (formerly used Bitbucket) as the main version control service",
+        "g": "Created features/sections/subsections for the new web app (coded in React) using a micro frontend approach",
+        "h": "Developed features that facilitated a smooth transition for 90% of clients using the legacy platform web app to the more modern web app, resulting in a significantly improved user experience"
+    },
+    "GoToHighlighted": {
+        "a": "Developed a <strong>high-end business communication settings tool</strong> using <strong>ReactJS, Redux-Thunk, React-Router, Javascript, Typescript, HTML5, CSS3,</strong> and <strong>MUI5</strong>",
+        "b": "Built and managed <strong>custom components</strong> for internal libraries",
+        "c": "Exclusively used <strong>React-Hooks</strong> to handle application <strong>life-cycle processes</strong>",
+        "d": "Collaborated with the <strong>UI/UX</strong> team to establish <strong>specifications</strong> and <strong>system designs</strong>",
+        "e": "Worked in <strong>Agile Methodologies</strong> for iterative development to consistently deliver a better application",
+        "f": "Possesses <strong>strong expertise in Github</strong> (formerly used Bitbucket) as the main version control service",
+        "g": "Created features/sections/subsections for the new web app (coded in React) using a <strong>micro frontend approach</strong>",
+        "h": "Developed features that facilitated a smooth transition for <strong>90% of clients</strong> using the legacy platform web app to the more modern web app, resulting in a <strong>significantly improved user experience</strong>"
     },
     "Desjardins": {
-        "a": "Lead the development and introduced rigorous coding standards of our frontend application in Typescript using StencilJS",
-        "b": "Developed new features for Desjardins' applications using the latest trends in tech and architecture",
-        "c": "Successfully set up our continuous integration pipeline from scratch which improved our deployment performance significantly (~5x) using Concourse CI",
-        "d": "Successfully setup an API for our backend to accept calls from other internal applications using Spring Boot"
+        "a": "Led the development and introduced rigorous coding standards for our frontend application in Typescript using StencilJS",
+        "b": "Developed a frontend service from scratch using AngularJS, StencilJS, Typescript, HTML5, and CSS/SCSS",
+        "c": "Helped develop a RESTful service from scratch, using a microservices approach for better performance with the help of SpringBoot and libraries such as PKCE for secure authentication",
+        "d": "Configured Concourse/CI automated pipelines that would fetch a project, build, run unit tests, run smoke tests, and deploy to multiple environments (dev, stage and production)",
+        "e": "Developed unit tests using JUnit5 and JaCoCo for Spring Boot, and Jest for Stencil",
+        "f": "Connected our repositories to our dedicated SonarQube server, and added an 80% coverage test with 5% duplication thresholds for success (on both backend and frontend)"
+    },
+    "DesjardinsHighlighted": {
+        "a": "Led the development and <strong>introduced rigorous coding standards</strong> for our frontend application in <strong>Typescript</strong> using <strong>StencilJS</strong>",
+        "b": "Developed a frontend web app from scratch using <strong>AngularJS, StencilJS, Typescript, HTML5</strong>, and <strong>CSS/SCSS</strong>",
+        "c": "Helped develop a <strong>RESTful</strong> services from scratch, using a <strong>microservices approach</strong> for <strong>better performance</strong> and <strong>division of task</strong>, with the help of <strong>SpringBoot</strong> and libraries such as <strong>PKCE</strong> for secure authentication",
+        "d": "Configured <strong>Concourse/CI automated pipelines</strong> that would <strong>fetch, build, run unit tests, run smoke tests</strong>, and <strong>deploy</strong> our project to multiple environments (<strong>dev, stage and production</strong>)",
+        "e": "Developed <strong>unit tests</strong> using <strong>JUnit5</strong> and <strong>JaCoCo</strong> for <strong>Spring Boot</strong>, and <strong>Jest/Karma</strong> for <strong>Stencil</strong>",
+        "f": "Connected our repositories to our dedicated <strong>SonarQube</strong> server, and added an <strong>80% test coverage</strong> with <strong>5% duplication thresholds</strong> for success (on both backend and frontend)"
     },
     "Bell": {
-        "a": "Team lead for the entire lifecycle of the project. Created the UX design and the entire base architecture of the app's frontend",
-        "b": "Created automated testing (unit and integration testing) for every new feature added",
-        "c": "After project completion, switched to the backend team and helped develop and maintain new features in C#",
-        "d": "Debug, fixed a complex database system and helped update the backend automated migrations scripts"
+        "a": "Built a fully functional JIRA-like dashboard for internal teams to use at standups from scratch using EmberJS, and the Ember Octane framework, along with HTML, JavaScript, and CSS",
+        "b": "Introduced a solid structured code design that creates reusable modular components across the app",
+        "c": "Mentored interns on the use of EmberJS",
+        "d": "Worked with the backend team to develop endpoints for specific use cases required by the clients using C# with some well-known design patterns such as OOP and Polymorphism",
+        "e": "Followed agile development practices and used Bitbucket/JIRA for bug tracking"
+    },
+    "BellHighlighted": {
+        "a": "Built a fully functional JIRA-like dashboard for internal teams to use at standups from scratch using <strong>EmberJS</strong>, and the <strong>Ember Octane</strong> framework, along with <strong>HTML, JavaScript</strong>, and <strong>CSS</strong>",
+        "b": "Introduced a <strong>solid structured code design</strong> that creates <strong>reusable modular components</strong> across the app",
+        "c": "Mentored interns on the use of EmberJS",
+        "d": "Worked with the backend team to develop endpoints for specific use cases required by the clients using C# with some well-known design patterns such as <strong>OOP</strong> and <strong>Polymorphism</strong>",
+        "e": "Followed <strong>agile development practices</strong> and used Bitbucket/JIRA for bug tracking"
     },
     "Discord": {
-        "a": "Developed a discord bot with integrated commands and a queue system that plays music across channels using purely NodeJS",
-        "b": "Setup an EC2 Instance with automated configuration using Terraform and Ansible, allowing my bot to run 24/7 on it",
+        "a": "Developed a Discord Bot that plays music for my group of friends using NodeJS, incorporating a custom-made queue system with features like previous, pause, play, and next. This implementation utilized prebuilt libraries such as Discord.js 13 and ytdl for playing Youtube music",
+        "b": "Configured an EC2 server instance to host my Discord bot using a prebuilt library package called pm2, which effectively runs Node projects as processes, enabling the bot to operate 24/7",
+        "c": "Pursued Ansible and Terraform as hobbies to acquire automation skills, successfully automating the process of setting up an EC2 server with all the necessary packages to run the Discord bot",
+        "repo": "https://github.com/thenoobgrammer/bramble"
+    },
+    "DiscordHighlighted": {
+        "a": "Developed a <strong>Discord Bot that plays music</strong> for my group of friends using NodeJS, incorporating a <strong>custom-made queue system</strong> with features like previous, pause, play, and next. This implementation utilized prebuilt libraries such as Discord.js 13 and ytdl for playing Youtube music",
+        "b": "Configured an <strong>EC2 server instance</strong> to host my Discord bot using a prebuilt library package called pm2, which effectively runs Node projects as processes, enabling the bot to operate 24/7",
+        "c": "Pursued <strong>Ansible</strong> and <strong>Terraform</strong> as hobbies to acquire automation skills, <strong>successfully automating the process of setting up an EC2 server with all the necessary packages</strong> to run the Discord bot",
         "repo": "https://github.com/thenoobgrammer/bramble"
     },
     "Portfolio": {
-        "a": "Developed a portfolio website using ReactJS and Tailwind CSS",
-        "b": "Setup an statically hosted S3 bucket that runs on a Hosted Zone, allowing me to automatically sync changes to the website with the run of a simple command",
-        "c": "Using several libraries such as EmailJS for client contacts and i18n-next handling locales",
+        "a": "Developed a portfolio/profile website with no backend, utilizing React 18 and TailwindCSS",
+        "b": "Designed and implemented custom-made components such as Dialogs, Buttons, LanguageSwitchers, and Spinners",
+        "c": "Implemented a small contact form that allows visitors to reach out via Email using the EmailJS library",
+        "d": "Integrated a language switcher (FR, EN) using i18next for improved user experience",
+        "e": "Implemeted a PDF download option for my curriculum that supports both languages",
+        "f": "Set up an S3 bucket to statically host this project under a purchased domain, ensuring secure HTTPS protocol",
+        "g": "Gained a comprehensive understanding of using aws-cli commands",
+        "repo": "https://github.com/thenoobgrammer/my-portfolio"
+    },
+    "PortfolioHighlighted": {
+        "a": "Developed a <strong>portfolio/profile website</strong> with no backend, utilizing <strong>React 18</strong> and <strong>TailwindCSS</strong>",
+        "b": "Designed and <strong>implemented custom-made components</strong> such as Dialogs, Buttons, LanguageSwitchers, and Spinners",
+        "c": "Implemented a small <strong>contact form</strong> that allows visitors to reach out via Email using the <strong>EmailJS library</strong>",
+        "d": "Integrated a language switcher (FR, EN) using <strong>i18next</strong> for <strong>improved user experience</strong>",
+        "e": "Integrated a <strong>PDF download option for my curriculum that supports both languages</strong>",
+        "f": "Set up an <strong>S3 bucket</strong> to statically host this project under a <strong>purchased domain</strong>, ensuring secure HTTPS protocol",
+        "g": "Gained a <strong>comprehensive understanding of using aws-cli commands</strong>",
         "repo": "https://github.com/thenoobgrammer/my-portfolio"
     },
     "Pickside": {
-        "a": "Eventually to be an event planner/manager for sports activities across several regions (Quebec, Toronto, etc...)",
-        "b": "Developed a REST API with OAuth Bearer token authentication, in NodeJS that is also connected to a MongoDB server",
-        "c": "Frontend connected to Google's official map service which will eventually become viable when the code is fully built",
-        "d": "Developed the frontend in React 18 with a well structured repo using custom hooks and Material-UI (will eventually move to tailwind CSS).",
-        "repo": "https://github.com/PickSide"
+        "a": "Developed a sporting event manager web app that allows users to plan outdoor activities related to sports using ReactJS, Redux-Thunk, TailwindCSS, and HTML",
+        "b": "Created a RESTful service backend using NodeJS/ExpressJS and Mongoose, which connects to a MongoDB server for data storage",
+        "c": "Implemented an authentication system with the help of the JWT library, allowing users to connect to the backend with an accessToken (currently lasting 1 minute) and a refreshToken",
+        "d": "Integrated a Swagger server to host the same endpoint for documentation purposes",
+        "e": "Implemented a Google login authentication option, allowing users to connect with their Google accounts",
+        "f": "Created custom-made reusable components such as TextField, Accordion, Stepper, Toast, Calendar, and Timepicker",
+        "g": "Exclusively utilized React-Hooks to handle application life-cycle processes",
+        "h": "Developed custom middlewares to intercept dispatches and execute some logic",
+        "i": "Utilized Google's Places library to connect a map and search for locations",
+        "j": "Used HTML's native geolocating function to ask for the user's location, so the map centers and zooms in on their area upon loading",
+        "k": "Implemented a language switcher and a theme switcher",
+        "repo": "https://github.com/PickSide",
+        "website": "https://pickside.net"
+    },
+    "PicksideHighlighted": {
+        "a": "Developed a <strong>sporting event manager web app</strong> that allows users to plan outdoor activities related to sports using <strong>ReactJS, Redux-Thunk, TailwindCSS</strong>, and <strong>HTML</strong>",
+        "b": "Created a RESTful <strong>service backend</strong> using NodeJS/ExpressJS and Mongoose, which <strong>connects to a MongoDB server for data storage</strong>",
+        "c": "Implemented an <strong>authentication system</strong> with the help of the JWT library, allowing users to connect to the backend with an accessToken (currently lasting 1 minute) and a refreshToken",
+        "d": "Integrated a <strong>Swagger server</strong> to host the same endpoint for documentation purposes",
+        "e": "Implemented a <strong>Google login authentication option</strong>, allowing users to connect with their Google accounts",
+        "f": "Created <strong>custom-made reusable components</strong> such as TextField, Accordion, Stepper, Toast, Calendar, and Timepicker",
+        "g": "Exclusively utilized <strong>React-Hooks</strong> to handle application life-cycle processes",
+        "h": "Developed <strong>custom middlewares</strong> to intercept dispatches and execute some logic",
+        "i": "Utilized <strong>Google's Places library</strong> to connect a map and search for locations",
+        "j": "Used <strong>HTML's native geolocating</strong> function to ask for the user's location, so the map centers and zooms in on their area upon loading",
+        "k": "Implemented a language switcher and a theme switcher",
+        "repo": "https://github.com/PickSide",
+        "website": "https://pickside.net"
     },
     "Sadboiss": {
-        "a": "Developed a very small E-Commerce website with a working cart, login system and an attempted payment system",
-        "b": "Used C# for the backend with a structured MySQL database and a migration system",
-        "c": "Used React for the frontend (no custom hooks) with old school reducers and action creators (Redux)",
+        "a": "Developed a very small E-Commerce website as a project for friends, although it was never completed. The development involved using React, Redux-Thunk, HTML, CSS, and SCSS",
+        "b": "Implemented a fully functional cart system, a basic login system, and a semi-functional PayPal integration for processing payments",
+        "c": "Created a backend REST service that seamlessly connects to a SQL database system",
+        "d": "Set up migration files to facilitate data initialization during fresh runs, specifically for development purposes",
+        "repo": "https://github.com/Sadboiss"
+    },
+    "SadboissHighlighted": {
+        "a": "Developed a very small <strong>E-Commerce website as a project for friends</strong>, although it was never completed. The development involved using <strong>React, Redux-Thunk, HTML, CSS</strong>, and <strong>SCSS</strong>",
+        "b": "Implemented a fully <strong>functional cart system</strong>, <strong>a basic login system</strong>, and a semi-functional PayPal integration for processing payments",
+        "c": "Created a backend <strong>REST service</strong> that seamlessly connects to a <strong>SQL database system</strong>",
+        "d": "Set up <strong>migration files</strong> to facilitate data initialization during fresh runs, specifically for development purposes",
         "repo": "https://github.com/Sadboiss"
     },
     "Project portfolio": "Project portfolio",
@@ -93,11 +177,15 @@
     "Completed": "Completed",
     "Clients": "Clients",
     "Satisfied": "Satisfied",
-    "About me content": "I have a passion for helping people build their online presence. My expertise lies in creating custom websites that are tailored to your unique needs. Whether you're a small business owner looking to establish an online presence, or an individual looking to showcase your portfolio, I can help bring your vision to life.",
-    "Click here to access": "Click here to access",
+    "About me content": "Welcome to my profile page stranger! I am a fully schooled and self-taught starting-senior fullstack developer and as a side-hobby I enjoy coding | gym | soccer | hiking. I currently hold 4 years of experience since graduating out of Engineering school and I am looking to develop some fun projects. ",
+    "Click here to access repo": "Click here to access repo",
+    "Click here to go to website": "Click here to go to website",
     "Your request": "Your request",
     "Wrong format": "Field in the wrong format",
     "Is required": "Field required",
     "Description": "Description",
-    "Describe your project": "Describe your inquiry"
+    "Describe your project": "Describe your inquiry",
+    "Download": "Download",
+    "My Website": "My Website",
+    "CvFilename": "CV_Up_to_date"
 }
