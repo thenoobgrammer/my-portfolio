@@ -64,7 +64,7 @@ export const CV = React.forwardRef((props, ref) => {
 						<span className="text-[36px]">{t('Work experience')}</span>
 					</div>
 					<div className="flex flex-col gap-y-10">
-						{WorkExperiences.map(({ start, end, company, title, descriptions, technologies }, idx) => (
+						{WorkExperiences.map(({ start, end, company, title, descriptionsHighlighted, technologies }, idx) => (
 							<div className="flex flex-col" key={idx}>
 								<div className="flex flex-col">
 									<span className="h3 m-0">
@@ -75,7 +75,7 @@ export const CV = React.forwardRef((props, ref) => {
 									</span>
 								</div>
 								<ul>
-									{descriptions.map((description, innerIdx) => (
+									{descriptionsHighlighted.map((description, innerIdx) => (
 										<li className="flex gap-x-4" key={innerIdx}>
 											<span>-</span>
 											<span>
@@ -96,7 +96,7 @@ export const CV = React.forwardRef((props, ref) => {
 						<span className="text-[36px]">{t('Personal highlights')}</span>
 					</div>
 					<div className="flex flex-col gap-y-10">
-						{PersonalProjects.map(({ name, title, descriptions, repoURL, websiteURL, technologies }, idx) => (
+						{PersonalProjects.map(({ name, title, descriptionsHighlighted, repoURL, websiteURL, technologies }, idx) => (
 							<div className="flex flex-col" key={idx}>
 								<div className="flex flex-col">
 									<span className="h3 m-0">{name}</span>
@@ -128,7 +128,7 @@ export const CV = React.forwardRef((props, ref) => {
 									))}
 								</div>
 								<ul>
-									{descriptions.map((description, innerIdx) => (
+									{descriptionsHighlighted.map((description, innerIdx) => (
 										<li className="flex gap-x-4" key={innerIdx}>
 											<span>-</span>
 											<span>

@@ -20,46 +20,129 @@
     "In progress": "En progrès",
     "Banner.intro": "Si vous recherchez un développeur web compétent et passionné par la création de sites web beaux et fonctionnels, ne cherchez plus ! Avec 4 ans d'expérience dans le domaine, je suis déterminé à fournir un travail de qualité supérieure qui répond aux besoins de mes clients et dépasse leurs attentes. Que vous cherchiez un site web simple et élégant ou une plateforme complexe et riche en fonctionnalités, j'ai l'expertise et la créativité pour donner vie à votre vision. Travaillons ensemble pour construire quelque chose d'incroyable !",
     "GoTo": {
-        "a": "En charge de la transition des fonctionnalités héritées (modulairement) vers une plateforme plus récente développée avec React, permettant à 85% des clients d'avoir une expérience plus moderne",
-        "b": "Création de composants entièrement fonctionnels, testés et documentés pour que les équipes internes les utilisent à travers les sous-modules tout au long de leur développement",
-        "c": "Collaboration avec l'UI/UX pour offrir une meilleure expérience aux clients existants et potentiels",
-        "d": "Démonstration des fonctionnalités devant les clients, mettant en valeur les efforts de l'équipe"
+        "a": "Développé un outil haut de gamme de communication d'entreprise en utilisant ReactJS, Redux-Thunk, React-Router, Javascript, Typescript, HTML5, CSS3 et MUI5",
+        "b": "Construit et géré des composants personnalisés pour des librairies internes",
+        "c": "Exclusivement utilisé les React-Hooks pour gérer les processus du cycle de vie de l'application",
+        "d": "Collaboré avec l'équipe UI/UX pour établir les spécifications et les conceptions du système",
+        "e": "Travaillé selon des méthodologies agiles pour un développement itératif afin de fournir constamment une meilleure application",
+        "f": "Possède une expertise solide sur Github (anciennement utilisé Bitbucket)",
+        "g": "Créé des fonctionnalités/sections/sous-sections pour la nouvelle application web (codée en React) en utilisant une approche micro-frontend",
+        "h": "Développé des fonctionnalités qui ont facilité une transition fluide pour 90% des clients utilisant l'application web de la plateforme héritée vers l'application web plus moderne, entraînant une expérience utilisateur nettement améliorée"
+    },
+    "GoToHighlighted": {
+        "a": "Développé un <strong>outil haut de gamme de communication</strong> d'entreprise en utilisant <strong>ReactJS, Redux-Thunk, React-Router, Javascript, Typescript, HTML5, CSS3</strong> et <strong>MUI5</strong>",
+        "b": "Construit et géré des <strong>composants personnalisés</strong> pour des librairies internes",
+        "c": "Exclusivement utilisé les <strong>React-Hooks</strong> pour gérer les processus du cycle de vie de l'application",
+        "d": "Collaboré avec l'équipe UI/UX pour établir les <strong>spécifications</strong> et les <strong>conceptions du système</strong>",
+        "e": "Travaillé selon des <strong>méthodologies agiles</strong> pour un <strong>développement itératif</strong> afin de fournir constamment une meilleure application",
+        "f": "Possède une <strong>expertise solide sur Github</strong> (anciennement utilisé Bitbucket)",
+        "g": "Créé des fonctionnalités/sections/sous-sections pour la nouvelle application web (codée en React) en utilisant une <strong>approche micro-frontend</strong>",
+        "h": "Développé des fonctionnalités qui ont facilité une <strong>transition fluide pour 90% des clients</strong> utilisant l'application web de la plateforme héritée vers l'application web plus moderne, entraînant <strong>une expérience utilisateur nettement améliorée</strong>"
     },
     "Desjardins": {
-        "a": "Chef de développement et introduction de normes de codage rigoureuses pour notre application frontend en Typescript à l'aide de StencilJS",
-        "b": "Développement de nouvelles fonctionnalités pour les applications de Desjardins en utilisant les dernières tendances en matière de technologie et d'architecture",
-        "c": "Configuration réussie de notre pipeline d'intégration continue à partir de zéro, ce qui a considérablement amélioré nos performances de déploiement (~5x) en utilisant Concourse CI",
-        "d": "Configuration réussie d'une API pour que notre backend accepte les appels d'autres applications internes en utilisant Spring Boot"
+        "a": "Dirigé le développement et introduit des normes rigoureuses de codage pour notre application frontend en Typescript en utilisant StencilJS",
+        "b": "Développé un service frontend à partir de zéro en utilisant AngularJS, StencilJS, Typescript, HTML5 et CSS/SCSS",
+        "c": "Aidé à développer un service RESTful à partir de zéro, en utilisant une approche de microservices pour de meilleures performances avec l'aide de SpringBoot et de bibliothèques telles que PKCE pour une authentification sécurisé",
+        "d": "Configuré des pipelines automatisés Concourse/CI qui récupèrent un projet, effectuent une construction, exécutent des tests unitaires, des tests de fumée et le déploiement sur plusieurs environnements (dev, stage et production)",
+        "e": "Développé des tests unitaires en utilisant JUnit5 et JaCoCo pour Spring Boot, et Jest pour Stencil",
+        "f": "Connecté nos référentiels à notre serveur dédié SonarQube et ajouté un test de couverture de 80% avec des seuils de duplication de 5% pour le succès (à la fois pour le backend et le frontend)"
+    },
+    "DesjardinsHighlighted": {
+        "a": "Dirigé le développement et <strong>introduit des normes rigoureuses de codage</strong> pour notre application frontend en <strong>Typescript</strong> en utilisant <strong>StencilJS</strong>",
+        "b": "Développé un service frontend à partir de zéro en utilisant <strong>AngularJS, StencilJS, Typescript, HTML5</strong> et <strong>CSS/SCSS</strong>",
+        "c": "Aidé à développer un service <strong>RESTful</strong> à partir de zéro, en utilisant <strong>une approche de microservices</strong> pour de <strong>meilleures performances</strong> avec l'aide de <strong>SpringBoot</strong> et de bibliothèques telles que <strong>PKCE</strong> pour une authentification sécurisé",
+        "d": "<strong>Configuré des pipelines automatisés Concourse/CI</strong> qui fetch un projet, effectuent un build, exécutent des tests unitaires, des smokes tests et le déploiement sur plusieurs environnements (dev, stage et production)",
+        "e": "<strong>Développé des tests unitaires</strong> en utilisant <strong>JUnit5</strong> et <strong>JaCoCo</strong> pour Spring Boot, et <strong>Jest/Karma</strong> pour Stencil",
+        "f": "Connecté nos répertoires à notre serveur dédié <strong>SonarQube</strong> et ajouté un <strong>test de couverture de 80%</strong> avec des <strong>seuils de duplication de 5%</strong> pour le succès (à la fois pour le backend et le frontend)"
     },
     "Bell": {
-        "a": "Chef d'équipe pour l'ensemble du cycle de vie du projet. Création de la conception UX et de l'architecture de base complète de l'application frontend",
-        "b": "Création de tests automatisés (tests unitaires et d'intégration) pour chaque nouvelle fonctionnalité ajoutée",
-        "c": "Après l'achèvement du projet, passage à l'équipe backend et aide au développement et à la maintenance de nouvelles fonctionnalités en C#",
-        "d": "Débogage, correction d'un système de base de données complexe et aide à la mise à jour des scripts de migration automatisés du backend"
+        "a": "Construit un tableau de bord entièrement fonctionnel similaire à JIRA à partir de zéro en utilisant EmberJS et le framework Ember Octane, ainsi que HTML, JavaScript et CSS, pour que les équipes internes puissent l'utiliser lors de leurs standups",
+        "b": "Introduit une conception de code bien structurée avec des composants modulaires et réutilisables à travers l'application",
+        "c": "Encadré des stagiaires sur l'utilisation d'EmberJS",
+        "d": "Travaillé avec l'équipe backend pour développer des endpoints pour des cas d'utilisation spécifiques requis par les clients en utilisant C# avec certains modèles de conception bien connus tels que la OOP et le polymorphisme",
+        "e": "Suivi des pratiques de développement agile et utilisé Bitbucket/JIRA pour le suivi des bugs"
+    },
+    "BellHighlighted": {
+        "a": "<strong>Construit un tableau de bord entièrement fonctionnel similaire à JIRA</strong> à partir de zéro en utilisant <strong>EmberJS</strong> et <strong>Ember Octane</strong>, ainsi que <strong>HTML, JavaScript</strong> et <strong>CSS</strong>, pour que les équipes internes puissent l'utiliser lors de leurs standups",
+        "b": "Introduit <strong>une conception de code bien structurée</strong> avec des <strong>composants modulaires et réutilisables</strong> à travers l'application",
+        "c": "Encadré des stagiaires sur l'utilisation d'EmberJS",
+        "d": "Travaillé avec l'équipe backend pour développer des endpoints pour des cas d'utilisation spécifiques requis par les clients en utilisant C# avec certains modèles de conception bien connus tels que la <strong>OOP</strong> et le <strong>polymorphisme</strong>",
+        "e": "Suivi des <strong>pratiques de développement agile</strong> et utilisé Bitbucket/JIRA pour le suivi des bugs"
     },
     "Discord": {
-        "a": "Développement d'un bot Discord avec des commandes intégrées et un système de file d'attente qui lit de la musique à travers les canaux en utilisant uniquement NodeJS",
-        "b": "Configuration d'une instance EC2 avec une configuration automatisée à l'aide de Terraform et Ansible, permettant à mon bot de fonctionner 24/7 dessus",
+        "a": "Développé un bot Discord qui joue de la musique pour mon groupe d'amis en utilisant NodeJS, intégrant un système de file d'attente sur mesure avec des fonctionnalités telles que précédent, pause, lecture et suivant. Cette implémentation a utilisé des bibliothèques préconstruites telles que Discord.js 13 et ytdl pour jouer de la musique depuis YouTube",
+        "b": "Configuré une instance de serveur EC2 pour héberger mon bot Discord en utilisant un package de bibliothèque préconstruite appelé pm2, qui exécute efficacement les projets Node en tant que processus, permettant ainsi au bot de fonctionner 24/7",
+        "c": "Exploré Ansible et Terraform en tant que passe-temps pour acquérir des compétences en automatisation, ce qui m'a permis d'automatiser avec succès le processus de configuration d'un serveur EC2 avec tous les packages nécessaires pour exécuter le bot Discord",
+        "repo": "https://github.com/thenoobgrammer/bramble"
+    },
+    "DiscordHighlighted": {
+        "a": "Développé un bot <strong>Discord qui joue de la musique</strong> pour mon groupe d'amis en utilisant NodeJS, <strong>intégrant un système de file d'attente sur mesure</strong> avec des fonctionnalités telles que précédent, pause, lecture et suivant. Cette implémentation a utilisé des bibliothèques préconstruites telles que Discord.js 13 et ytdl pour jouer de la musique depuis YouTube",
+        "b": "Configuré une <strong>instance de serveur EC2</strong> pour héberger mon bot Discord en utilisant un package de bibliothèque préconstruite appelé pm2, qui exécute efficacement les projets Node en tant que processus, permettant ainsi au bot de fonctionner 24/7",
+        "c": "Exploré <strong>Ansible</strong> et <strong>Terraform</strong> en tant que passe-temps pour acquérir des compétences en automatisation, ce qui m'a permis d'<strong>automatiser avec succès le processus de configuration d'un serveur EC2 avec tous les packages nécessaires</strong> pour exécuter le bot Discord",
         "repo": "https://github.com/thenoobgrammer/bramble"
     },
     "Portfolio": {
-        "a": "Développement d'un site web de portfolio en utilisant ReactJS et Tailwind CSS",
-        "b": "Configuration d'un bucket S3 hébergé de manière statique qui s'exécute sur une zone hébergée, me permettant de synchroniser automatiquement les modifications apportées au site web d'un simple commande",
-        "c": "Utilisation de plusieurs bibliothèques telles que EmailJS pour les contacts clients et i18n-next pour la gestion des localisations",
+        "a": "Développé un site web de portfolio/profil sans backend en utilisant React 18 et TailwindCSS",
+        "b": "Conçu et implémenté des composants sur mesure tels que des Dialogues, des Boutons, des Sélecteurs de Langue et des Indicateurs de Chargement (Spinners)",
+        "c": "Mis en place un petit formulaire permettant aux visiteurs de me contacter par e-mail en utilisant la bibliothèque EmailJS",
+        "d": "Mis en place un sélecteur de langue (FR, EN) en utilisant i18next pour une meilleure expérience utilisateur.",
+        "e": "Fourni une option de téléchargement PDF pour mon curriculum qui prend en charge les deux langues",
+        "f": "Configuré un bucket S3 pour héberger statiquement ce projet sous un domaine acheté, en assurant un protocole HTTPS sécurisé",
+        "g": "Acquis une meilleure connaissance de l'utilisation des commandes aws-cli",
+        "repo": "https://github.com/thenoobgrammer/my-portfolio"
+    },
+    "PortfolioHighlighted": {
+        "a": "Développé un site web de <strong>portfolio/profil</strong> sans backend en utilisant <strong>React 18</strong> et <strong>TailwindCSS</strong>",
+        "b": "Conçu et <strong>implémenté des composants sur mesure</strong> tels que des Dialogues, des Boutons, des Sélecteurs de Langue et des Indicateurs de Chargement (Spinners)",
+        "c": "Mis en place un petit <strong>formulaire permettant aux visiteurs de me contacter</strong> par e-mail en utilisant la librarie <strong>EmailJS</strong>",
+        "d": "Mis en place <strong>un sélecteur de langue</strong> (FR, EN) en utilisant i18next pour une <strong>meilleure expérience utilisateur</strong>",
+        "e": "Fourni une <strong>option de téléchargement PDF pour mon curriculum</strong> qui prend en charge les deux langues",
+        "f": "Configuré un bucket <strong>S3</strong> pour héberger statiquement ce projet sous <strong>un domaine acheté</strong>, en assurant un protocole HTTPS sécurisé",
+        "g": "Acquis <strong>une meilleure connaissance de l'utilisation des commandes aws-cli</strong>",
         "repo": "https://github.com/thenoobgrammer/my-portfolio"
     },
     "Pickside": {
-        "a": "Éventuellement destiné à devenir un planificateur/organisateur d'événements sportifs dans plusieurs régions (Québec, Toronto, etc...)",
-        "b": "Développé une API REST avec une authentification de jeton d'ours OAuth, en NodeJS qui est également connectée à un serveur MongoDB",
-        "c": "Frontend connecté au service de carte officiel de Google qui deviendra éventuellement viable lorsque le code sera entièrement construit",
-        "d": "Développé le frontend en React 18 avec un référentiel bien structuré utilisant des hooks personnalisés et Material-UI (passera éventuellement à Tailwind CSS).",
+        "a": "Développé une application web de gestion d'événements sportifs qui permet aux utilisateurs de planifier des activités de plein air liées aux sports en utilisant ReactJS, Redux-Thunk, TailwindCSS et HTML",
+        "b": "Créé un backend de service RESTful en utilisant NodeJS/ExpressJS et Mongoose, qui se connecte à un serveur MongoDB pour le stockage des données",
+        "c": "Implémenté un système d'authentification à l'aide de la bibliothèque JWT, permettant aux utilisateurs de se connecter au backend avec un accessToken (actuellement valable 1 minute) et un refreshToken",
+        "d": "Intégré un serveur Swagger à des fins de documentation",
+        "e": "Mis en place une option d'authentification de connexion Google, permettant aux utilisateurs de se connecter avec leurs comptes Google",
+        "f": "Créé des composants réutilisables sur mesure tels que TextField, Accordion, Stepper, Toast, Calendar et Timepicker",
+        "g": "Utilisé exclusivement React-Hooks pour gérer les processus du cycle de vie de l'application",
+        "h": "Développé des middlewares sur mesure pour intercepter les envois et exécuter certaines logiques",
+        "i": "Utilisé la bibliothèque Google's Places API pour connecter une carte et rechercher des emplacements",
+        "j": "Utilisé la fonction native de géolocalisation de HTML pour demander l'emplacement de l'utilisateur, de sorte que la carte se centre et zoome sur sa zone lors du chargement",
+        "k": "Mis en place un sélecteur de langue et un sélecteur de thème",
+        "repo": "https://github.com/PickSide",
+        "website": "Allez vers le siteweb"
+    },
+    "PicksideHighlighted": {
+        "a": "Développé une <strong>application web de gestion d'événements sportifs</strong> qui permet aux utilisateurs de planifier des activités de plein air liées aux sports en utilisant <strong>ReactJS, Redux-Thunk, TailwindCSS</strong> et <strong>HTML</strong>",
+        "b": "Créé un backend de service RESTful en utilisant NodeJS/ExpressJS et Mongoose, qui se connecte à un serveur MongoDB pour le stockage des données",
+        "c": "Implémenté un système d'authentification à l'aide de la bibliothèque JWT, permettant aux utilisateurs de se connecter au backend avec un accessToken (actuellement valable 1 minute) et un refreshToken",
+        "d": "Intégré un <strong>serveur Swagger</strong> à des fins de documentation",
+        "e": "<strong>Mis en place une option d'authentification de connexion Google</strong>, permettant aux utilisateurs de se connecter avec leurs comptes Google",
+        "f": "Créé des composants réutilisables sur mesure tels que TextField, Accordion, Stepper, Toast, Calendar et Timepicker",
+        "g": "Utilisé exclusivement <strong>React-Hooks</strong> pour gérer les processus du cycle de vie de l'application",
+        "h": "Développé des <strong>middlewares sur mesure</strong> pour intercepter les envois et exécuter certaines logiques",
+        "i": "Utilisé la bibliothèque <strong>Google's Places API</strong> pour connecter une carte et rechercher des emplacements",
+        "j": "Utilisé la fonction native de géolocalisation de HTML pour demander l'emplacement de l'utilisateur, de sorte que la carte se centre et zoome sur sa zone lors du chargement",
+        "k": "Mis en place un sélecteur de langue et un sélecteur de thème",
         "repo": "https://github.com/PickSide",
         "website": "Allez vers le siteweb"
     },
     "Sadboiss": {
-        "a": "Développé un petit site de commerce électronique avec un panier fonctionnel, un système de connexion et un système de paiement tenté",
-        "b": "Utilisé C# pour le backend avec une base de données MySQL structurée et un système de migration",
-        "c": "Utilisé React pour le frontend (sans hooks personnalisés) avec des anciennes méthodes de réducteurs et de créateurs d'actions (Redux)",
+        "a": "Développé un très petit site web de commerce électronique en tant que projet pour des amis, bien qu'il n'ait jamais été terminé à l'aide de React, Redux-Thunk, HTML, CSS et SCSS",
+        "b": "Implémenté un système de panier fonctionnel, un système de connexion basique et une intégration PayPal semi-fonctionnel pour le traitement des paiements",
+        "c": "Créé un service backend REST qui se connecte de manière transparente à un système de base de données SQL",
+        "d": "Mis en place des fichiers de migration pour faciliter l'initialisation des données lors de nouvelles exécutions, spécifiquement à des fins de développement",
+        "repo": "https://github.com/Sadboiss"
+    },
+    "SadboissHighlighted": {
+        "a": "Développé un <strong>très petit site web de commerce électronique</strong> en tant que projet pour des amis, bien qu'il n'ait jamais été terminé à l'aide de <strong>React, Redux-Thunk, HTML, CSS</strong> et <strong>SCSS</strong>",
+        "b": "Implémenté un <strong>système de panier fonctionnel</strong>, un système de connexion basique et une intégration PayPal semi-fonctionnel pour le traitement des paiements",
+        "c": "Créé un service backend REST qui se connecte de manière transparente à un <strong>système de base de données SQL</strong>",
+        "d": "Mis en place des fichiers de migration pour faciliter l'initialisation des données lors de nouvelles exécutions, spécifiquement à des fins de développement",
         "repo": "https://github.com/Sadboiss"
     },
     "Project portfolio": "Portfolio de projet",
@@ -100,5 +183,6 @@
     "Is required": "Champ obligatoire",
     "Description": "Description",
     "Describe your project": "Décrivez votre projet",
-    "Download": "Télécharger"
+    "Download": "Télécharger",
+    "CvFilename": "CV_Mis_a_jour"
 }

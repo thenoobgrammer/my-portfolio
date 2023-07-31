@@ -14,7 +14,6 @@ import React from 'react'
 import { fadeIn } from '../variants'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { PDFViewer } from '@react-pdf/renderer'
 
 const Header = () => {
 	const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
@@ -60,18 +59,15 @@ const Header = () => {
 				<div className="flex gap-x-4">
 					<LangSwitcher />
 					<Modale
-						// extraTop={<CVDownloadLink />}
-						title={t('Antoine Hakim, Senior Frontend Engineer')}
+						extraTop={<CVDownloadLink />}
+						title={`Antoine Hakim, ${t('Senior Frontend Engineer')}`}
 						buttonName={t('My CV')}
 						open={openCV}
 						handleOpen={() => setOpenCV(true)}
 						handleClose={() => setOpenCV(false)}
 						footerContent={<CTAButtons onClose={() => setOpenCV(false)} noSave />}
 					>
-						<PDFViewer style={{ width: 1400, height: 1200 }}>
-							<CVDownloadLink />
-						</PDFViewer>
-						{/* <CV /> */}
+						<CV />
 					</Modale>
 				</div>
 				<div onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="block cursor-pointer z-0 md:hidden">
